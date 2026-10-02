@@ -11,11 +11,11 @@ export const NewsInsights: React.FC = () => {
       img: '/images/red_sprayer_patriot.jpg'
     },
     {
-      category: 'METALLURGY',
-      date: 'MANUFACTURING INSIGHT',
-      title: 'Advancing Ductile Iron Durability in Rotavator Gearboxes',
-      desc: 'Implementation of MagmaSoft® 3D thermal simulation and robotic CNC machining centers operating to 0.02mm tolerances for heavy agricultural implements.',
-      img: '/images/usa_industrial_machining.jpg'
+      category: 'NEW EQUIPMENT',
+      date: 'PRODUCT LAUNCH',
+      title: 'Introducing Next-Generation Heavy-Duty Tractors',
+      desc: 'Agro Foundries launches the new line of 4WD articulated tractors built for deep ripping, continuous tillage, and maximum efficiency in high-acreage field operations.',
+      img: '/images/red_tractor_steiger.jpg'
     },
     {
       category: 'EXPANSION',

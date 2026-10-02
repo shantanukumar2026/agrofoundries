@@ -2,45 +2,44 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 interface ProductShowcaseStripProps {
-  onOpenProductDetail?: (productTitle: string) => void;
 }
 
-export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = ({ onOpenProductDetail }) => {
+export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = () => {
   const parts = [
     {
       title: 'TRACTORS',
       fullTitle: 'Heavy-Duty Farm Tractors',
-      img: 'https://images.unsplash.com/photo-1635438622580-e5fd8ca7096e?q=80&w=800&auto=format&fit=crop',
+      img: '/images/red_tractor_magnum.jpg',
       specs: 'Field Power & Towing'
     },
     {
       title: 'COMBINE HARVESTERS',
       fullTitle: 'Combine Harvesters for Grain',
-      img: 'https://images.unsplash.com/photo-1536719504278-9cfcf309f376?q=80&w=800&auto=format&fit=crop',
+      img: '/images/red_combine_axialflow.jpg',
       specs: 'Efficient Crop Harvesting'
     },
     {
       title: 'SEEDERS & PLANTERS',
       fullTitle: 'Precision Seeders & Planters',
-      img: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop',
+      img: '/images/red_tractor_steiger.jpg',
       specs: 'Accurate Seed Placement'
     },
     {
       title: 'PLOWS & TILLAGE',
       fullTitle: 'Plows and Soil Tillage Equipment',
-      img: 'https://images.unsplash.com/photo-1635438622580-e5fd8ca7096e?q=80&w=800&auto=format&fit=crop',
+      img: '/images/red_tractor_steiger.jpg',
       specs: 'Soil Preparation'
     },
     {
       title: 'CROP SPRAYERS',
       fullTitle: 'Self-Propelled Crop Sprayers',
-      img: 'https://images.unsplash.com/photo-1536719504278-9cfcf309f376?q=80&w=800&auto=format&fit=crop',
+      img: '/images/red_sprayer_patriot.jpg',
       specs: 'Fertilizer & Weed Control'
     },
     {
       title: 'HAY BALERS',
       fullTitle: 'Round and Square Hay Balers',
-      img: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop',
+      img: '/images/red_tractor_magnum.jpg',
       specs: 'Harvest Collection'
     }
   ];
@@ -69,7 +68,6 @@ export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = ({ onOp
           {parts.map((item, idx) => (
             <div 
               key={idx}
-              onClick={() => onOpenProductDetail && onOpenProductDetail(item.fullTitle || item.title)}
               className="card-hover-industrial img-hover-zoom"
               style={{
                 background: 'linear-gradient(165deg, #18201C 0%, #0D120F 100%)',
@@ -80,7 +78,6 @@ export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = ({ onOp
                 flexDirection: 'column',
                 justifyContent: 'space-between',
                 height: '275px',
-                cursor: 'pointer',
                 boxShadow: '0 10px 28px rgba(0,0,0,0.18)',
                 transition: 'all 0.3s ease'
               }}

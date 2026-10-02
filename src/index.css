@@ -66,7 +66,7 @@ body {
 
 /* TIGHT CORPORATE SECTION SPACING & SCROLL ANIMATION */
 .section-full-vh {
-  padding: 3.5rem 0;
+  padding: 2.75rem 0;
   position: relative;
   box-sizing: border-box;
 }
@@ -108,8 +108,10 @@ h4, h5, h6 {
 
 p {
   color: var(--text-secondary);
-  line-height: 1.65;
-  font-size: 1.15rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* Eyebrow Label */

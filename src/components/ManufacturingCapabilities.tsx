@@ -93,7 +93,7 @@ export const ManufacturingCapabilities: React.FC = () => {
               />
 
               {/* Dark Overlay */}
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(14, 54, 18, 0.96) 0%, rgba(27, 94, 32, 0.5) 60%, transparent 100%)' }} />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 40%, transparent 100%)' }} />
 
               {/* Card Label Overlay */}
               <div style={{ position: 'relative', zIndex: 10, padding: '1.5rem', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>

@@ -7,8 +7,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import CompanyIntro from './components/CompanyIntro';
 import FeaturedComponents from './components/FeaturedComponents';
-import { EXPLORER_PRODUCTS } from './components/InteractiveExplorer';
-import type { ProductItem } from './components/InteractiveExplorer';
+// Removed InteractiveExplorer imports
 import ProductShowcaseStrip from './components/ProductShowcaseStrip';
 import ManufacturingCapabilities from './components/ManufacturingCapabilities';
 import ManufacturingProcess from './components/ManufacturingProcess';
@@ -23,12 +22,12 @@ import Footer from './components/Footer';
 
 import RequestQuoteModal from './components/RequestQuoteModal';
 import WatchVideoModal from './components/WatchVideoModal';
-import ProductDetailPage from './components/ProductDetailPage';
+// Removed ProductDetailPage import
 
 function App() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-  const [selectedProductForDetail, setSelectedProductForDetail] = useState<ProductItem | null>(null);
+
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -89,20 +88,7 @@ function App() {
   const handleOpenVideo = () => setIsVideoModalOpen(true);
   const handleCloseVideo = () => setIsVideoModalOpen(false);
 
-  const handleOpenProductDetail = (itemOrTitle: ProductItem | string) => {
-    if (typeof itemOrTitle === 'string') {
-      const q = itemOrTitle.toLowerCase().trim();
-      const match = EXPLORER_PRODUCTS.find(p =>
-        p.title.toLowerCase().includes(q) ||
-        q.includes(p.title.toLowerCase()) ||
-        p.series.toLowerCase().includes(q) ||
-        p.desc.toLowerCase().includes(q)
-      ) || EXPLORER_PRODUCTS[0];
-      setSelectedProductForDetail(match);
-    } else {
-      setSelectedProductForDetail(itemOrTitle);
-    }
-  };
+
 
   return (
     <div style={{ minHeight: '100vh', background: '#F8F9FA', color: '#1B5E20' }}>
@@ -136,10 +122,10 @@ function App() {
         <CompanyIntro />
 
         {/* 06 Featured Rail Components (All Products) */}
-        <FeaturedComponents onOpenProductDetail={handleOpenProductDetail} />
+        <FeaturedComponents />
 
         {/* 07 Isolated Metal Castings Showcase Strip */}
-        <ProductShowcaseStrip onOpenProductDetail={handleOpenProductDetail} />
+        <ProductShowcaseStrip />
 
         {/* 08 Manufacturing Capabilities */}
         <ManufacturingCapabilities />
@@ -172,17 +158,7 @@ function App() {
       {/* 18 Corporate Mega Footer & Bottom Footer */}
       <Footer />
 
-      {/* Interactive Modals & Product Detail Page */}
-      <ProductDetailPage
-        isOpen={!!selectedProductForDetail}
-        product={selectedProductForDetail}
-        onClose={() => setSelectedProductForDetail(null)}
-        onRequestQuoteForProduct={(_title) => {
-          setSelectedProductForDetail(null);
-          setIsQuoteModalOpen(true);
-        }}
-        onSelectProduct={setSelectedProductForDetail}
-      />
+
 
       <RequestQuoteModal isOpen={isQuoteModalOpen} onClose={handleCloseQuote} />
       <WatchVideoModal isOpen={isVideoModalOpen} onClose={handleCloseVideo} />
