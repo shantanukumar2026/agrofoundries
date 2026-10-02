@@ -7,7 +7,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import CompanyIntro from './components/CompanyIntro';
 import FeaturedComponents from './components/FeaturedComponents';
-// Removed InteractiveExplorer imports
+import ProductsSection from './components/ProductsSection';
 import ProductShowcaseStrip from './components/ProductShowcaseStrip';
 import ManufacturingCapabilities from './components/ManufacturingCapabilities';
 import ManufacturingProcess from './components/ManufacturingProcess';
@@ -20,14 +20,8 @@ import NewsInsights from './components/NewsInsights';
 import CtaBanner from './components/CtaBanner';
 import Footer from './components/Footer';
 
-import RequestQuoteModal from './components/RequestQuoteModal';
-import WatchVideoModal from './components/WatchVideoModal';
-// Removed ProductDetailPage import
 
 function App() {
-  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -82,13 +76,6 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleOpenQuote = () => setIsQuoteModalOpen(true);
-  const handleCloseQuote = () => setIsQuoteModalOpen(false);
-
-  const handleOpenVideo = () => setIsVideoModalOpen(true);
-  const handleCloseVideo = () => setIsVideoModalOpen(false);
-
-
 
   return (
     <div style={{ minHeight: '100vh', background: '#F8F9FA', color: '#1B5E20' }}>
@@ -107,22 +94,20 @@ function App() {
       <TopContactBar />
 
       {/* 02 Main Navigation & 03 Mega Menu */}
-      <Header
-        onRequestQuoteClick={handleOpenQuote}
-      />
+      <Header />
 
       <main id="main-content">
         {/* 04 Full Screen Hero Section */}
-        <HeroSection
-          onRequestQuoteClick={handleOpenQuote}
-          onWatchVideoClick={handleOpenVideo}
-        />
+        <HeroSection />
 
         {/* 05 Company Introduction */}
         <CompanyIntro />
 
         {/* 06 Featured Rail Components (All Products) */}
         <FeaturedComponents />
+
+        {/* Agricultural Casting Catalog */}
+        <ProductsSection />
 
         {/* 07 Isolated Metal Castings Showcase Strip */}
         <ProductShowcaseStrip />
@@ -152,16 +137,11 @@ function App() {
         <NewsInsights />
 
         {/* 17 CTA Banner */}
-        <CtaBanner onRequestQuoteClick={handleOpenQuote} />
+        <CtaBanner />
       </main>
 
       {/* 18 Corporate Mega Footer & Bottom Footer */}
       <Footer />
-
-
-
-      <RequestQuoteModal isOpen={isQuoteModalOpen} onClose={handleCloseQuote} />
-      <WatchVideoModal isOpen={isVideoModalOpen} onClose={handleCloseVideo} />
 
       {/* Floating Action Buttons */}
       <div className="floating-action-btn">
