@@ -1,6 +1,5 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import Logo from './Logo';
 
 export const TopContactBar: React.FC = () => {
   return (

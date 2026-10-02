@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight, Check, Filter } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, Check } from 'lucide-react';
 
 interface FeaturedComponentsProps {
   onOpenProductDetail?: (productTitle: string) => void;
@@ -7,7 +7,7 @@ interface FeaturedComponentsProps {
 
 export const FeaturedComponents: React.FC<FeaturedComponentsProps> = ({ onOpenProductDetail }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [activeCategory] = useState<string>('all');
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -19,14 +19,6 @@ export const FeaturedComponents: React.FC<FeaturedComponentsProps> = ({ onOpenPr
     }
   };
 
-  const categories = [
-    { id: 'all', label: 'All Equipment & Parts' },
-    { id: 'sprayers', label: 'Precision Sprayers' },
-    { id: 'castings', label: 'Agricultural Castings' },
-    { id: 'combine', label: 'Combine & Harvesting' },
-    { id: 'tillage', label: 'Tillage & Implements' },
-    { id: 'tractor', label: 'Tractor & Drivetrain' }
-  ];
 
   const components = [
     // Precision Sprayers

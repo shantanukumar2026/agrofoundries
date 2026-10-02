@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
-import { ArrowRight, Search, ChevronDown, Building2, Layers, ShieldCheck, Compass, Menu, X, ChevronRight, Phone, Mail } from 'lucide-react';
+import { ArrowRight, ChevronDown, Building2, Layers, ShieldCheck, Compass, Menu, X, ChevronRight, Phone, Mail } from 'lucide-react';
 
 interface HeaderProps {
   onRequestQuoteClick?: () => void;

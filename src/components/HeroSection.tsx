@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, CheckCircle, ShieldCheck, Zap, Sprout, ChevronLeft, ChevronRight, Play, Pause, Layers } from 'lucide-react';
+import { CheckCircle, ShieldCheck, Zap, Sprout, ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 import gsap from 'gsap';
 
 interface HeroSectionProps {
