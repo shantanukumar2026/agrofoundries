@@ -23,432 +23,322 @@ export interface ProductItem {
 }
 
 export const EXPLORER_PRODUCTS: ProductItem[] = [
+  // 1. Sprayers
   {
-    id: 'rail-0',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Under-chassis critical components of high speed German LHB/FIAT coaches',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Under-chassis critical components of high speed German LHB/FIAT coaches manufactured by Westpoint Industries.',
+    id: 'spray-01',
+    category: 'sprayers',
+    categoryLabel: 'Precision Field Sprayers',
+    title: 'High-Clearance Self-Propelled Boom Sprayer 120ft',
+    series: 'AGRO-PATRIOT 120',
+    specs: '120ft Truss Boom • Pulse Width Modulation',
+    compliance: ['ASABE S572.1', 'ISO 11783', 'EPA DRT'],
+    axleLoad: 'High Clearance',
+    materialGrade: 'High-Strength Tubular Alloy & Poly Tank',
+    tensileStrength: '550 MPa',
+    yieldStrength: '420 MPa',
+    hardness: '210 BHN',
+    desc: 'High-performance commercial self-propelled field sprayer engineered for high-acreage American row crops with automatic ultrasonic boom height control and drift-reduction atomization.',
+    img: '/images/red_sprayer_patriot.jpg',
+    keyFeatures: ['120-Foot Dual-Fold Truss Boom', 'Individual Pulse Width Modulation Nozzle Shutoff', '1,200 Gallon Solution Tank', 'Air-Suspended High-Clearance Chassis']
+  },
+  {
+    id: 'spray-02',
+    category: 'sprayers',
+    categoryLabel: 'Precision Field Sprayers',
+    title: 'Commercial Axial-Flow High-Capacity Combine Harvester',
+    series: 'AGRO-HARVEST 9120',
+    specs: '523 HP Peak • 350-Bushel Grain Tank',
+    compliance: ['ASABE S318', 'ISO 4254', 'FEMA Standards'],
+    axleLoad: 'Heavy Drawbar',
+    materialGrade: 'High-Tensile Structural Steel & Quadtrac Ready',
+    tensileStrength: '620 MPa',
+    yieldStrength: '480 MPa',
+    hardness: '240 BHN',
+    desc: 'Class 9 high-throughput rotary combine harvester featuring gentle single-rotor threshing, precision yield mapping, and rapid 4.0 bu/sec unloading rates.',
+    img: '/images/red_combine_axialflow.jpg',
+    keyFeatures: ['Axial-Flow Single Rotor Threshing', '350-Bushel Grain Tank Capacity', 'High-Output Grain Unloading Auger', 'Integrated GPS Yield Mapping']
+  },
+  {
+    id: 'spray-03',
+    category: 'sprayers',
+    categoryLabel: 'Precision Field Sprayers',
+    title: 'Heavy Articulated 4WD Field Tractor 485 HP',
+    series: 'AGRO-STEIGER 485',
+    specs: '485 Rated HP • Heavy Drawbar Category IV/V',
+    compliance: ['ASABE S349', 'ISO 500', 'SAE J2847'],
+    axleLoad: 'Heavy Drawbar',
+    materialGrade: 'Cast Ductile Iron Axle Housings & Heavy Forged Frame',
+    tensileStrength: '700 MPa',
+    yieldStrength: '520 MPa',
+    hardness: '260 BHN',
+    desc: 'Heavy-duty articulated 4WD high-horsepower agricultural tractor built for continuous deep tillage, heavy rippers, and high-acreage field preparation.',
+    img: '/images/red_tractor_steiger.jpg',
+    keyFeatures: ['485 HP High-Torque Turbocharged Engine', 'Articulated Hydraulic Center Pivot', 'Heavy-Duty Category 4/5 Three-Point Hitch', 'Heavy Double-Reduction Planetary Axles']
+  },
+  {
+    id: 'spray-04',
+    category: 'sprayers',
+    categoryLabel: 'Precision Field Sprayers',
+    title: 'Row-Crop High-Torque Agricultural Tractor 250 HP',
+    series: 'AGRO-MAGNUM 250',
+    specs: '250 HP • Continuously Variable Transmission (CVT)',
+    compliance: ['ASABE S279', 'ISO 730', 'FEMA Approved'],
+    axleLoad: 'Mid-Range',
+    materialGrade: 'ASTM A536 Grade 80-55-06 Ductile Castings',
+    tensileStrength: '650 MPa',
+    yieldStrength: '450 MPa',
+    hardness: '220 BHN',
+    desc: 'Versatile row-crop workhorse engineered for precision planting, spray implement towing, and mid-range tillage with optimal power-to-weight balance.',
+    img: '/images/red_tractor_magnum.jpg',
+    keyFeatures: ['CVT Transmission with Smooth Torque Curve', 'High-Flow Electro-Hydraulic Remote Valves', 'Suspended Front Axle for Smooth Row Operations', 'ISOBUS Virtual Terminal Display Integration']
+  },
+
+  // 2. Castings
+  {
+    id: 'cast-01',
+    category: 'castings',
+    categoryLabel: 'Agricultural Castings',
+    title: 'Heavy-Duty Cambridge Packer Roller Ring 500mm',
+    series: 'SERIES CRES-RING',
+    specs: 'ASTM A536 Grade 65-45-12 Ductile Iron',
+    compliance: ['ASTM A536', 'ISO 9001:2015', 'FEMA Spec'],
+    axleLoad: 'Implement',
+    materialGrade: 'Spheroidal Graphite Ductile Iron',
+    tensileStrength: '450 MPa',
+    yieldStrength: '310 MPa',
+    hardness: '170-210 BHN',
+    desc: 'Robust breaker and Cambridge packer roller rings for seedbed preparation, soil clod crushing, moisture retention, and uniform seed emergence.',
+    img: '/images/prod_centering_disc.jpg',
+    keyFeatures: ['100% Porosity-Free Ductile Iron Casting', 'Optimized Serrated Edge Profile', 'Precision Bored Hub Tolerances', 'High Impact Resistance in Rocky Soils']
+  },
+  {
+    id: 'cast-02',
+    category: 'castings',
+    categoryLabel: 'Agricultural Castings',
+    title: 'Tractor 3-Point Hitch Lower Link Housing & Pivot',
+    series: 'SERIES HITCH-LINK',
+    specs: 'ASTM A536 80-55-06 High-Tensile Ductile',
+    compliance: ['ASABE S217', 'ASTM A536', 'ISO 9001:2015'],
+    axleLoad: 'Heavy Drawbar',
+    materialGrade: 'Austempered Ductile Iron (ADI)',
+    tensileStrength: '800 MPa',
+    yieldStrength: '550 MPa',
+    hardness: '260-310 BHN',
+    desc: 'Severe-duty lower link draft arm bracket and pivot housing engineered to handle dynamic pull loads from heavy tillage shanks and rippers.',
+    img: '/images/prod_pin_bracket.jpg',
+    keyFeatures: ['High Fatigue Strength Under Cyclic Tractive Pull', 'Robotic CNC Machined Bushing Bores', 'Heavy Reinforcement Ribbing', 'Corrosion Inhibited Primer Coating']
+  },
+  {
+    id: 'cast-03',
+    category: 'castings',
+    categoryLabel: 'Agricultural Castings',
+    title: 'Interlocking Tractor Front Counterweight Ballast (100 lbs)',
+    series: 'SERIES BALLAST-PRO',
+    specs: 'ASTM A48 Class 35 Heavy Grey Iron',
+    compliance: ['ASTM A48', 'ASABE S318', 'ISO 9001:2015'],
+    axleLoad: 'Heavy Drawbar',
+    materialGrade: 'High-Density Grey Cast Iron',
+    tensileStrength: '250 MPa',
+    yieldStrength: '180 MPa',
+    hardness: '190-230 BHN',
+    desc: 'Interlocking suitcase counterweights and rear wheel ballast rings delivering precise front-to-rear traction balance and reduced wheel slippage.',
+    img: '/images/amsted_jacking_pad.jpg',
+    keyFeatures: ['Precision Cast Integrated Carry Handle', 'Interlocking Keyway Prevents Clattering', 'Consistent ±1% Weight Distribution', 'Weather-Resistant Epoxy Enamel Finish']
+  },
+  {
+    id: 'cast-04',
+    category: 'castings',
+    categoryLabel: 'Agricultural Castings',
+    title: 'Heavy Planetary Gear Carrier Housing',
+    series: 'SERIES PLANET-CARRIER',
+    specs: 'High-Strength SG Iron 70-50-05',
+    compliance: ['ASTM A536', 'ISO 9001:2015', 'SAE J434'],
+    axleLoad: 'Heavy Drawbar',
+    materialGrade: 'Ductile Iron with Induction Hardened Bores',
+    tensileStrength: '700 MPa',
+    yieldStrength: '500 MPa',
+    hardness: '240-280 BHN',
+    desc: 'Precision 5-axis CNC machined planetary carrier housing for final drive gearboxes on combine harvesters and high-horsepower agricultural tractors.',
+    img: '/images/prod_overspeed_trip_casting.jpg',
+    keyFeatures: ['±0.015mm Pinion Shaft Alignment', 'MagmaSoft Verified Thermal Solidification', 'Integrated Lubrication Channels', 'Dynamic Balanced for Heavy Torque']
+  },
+
+  // 3. Harvesting Upgrades
+  {
+    id: 'harv-01',
+    category: 'harvesting',
+    categoryLabel: 'Combine & Harvesting Upgrades',
+    title: 'Progressive Discharge Beater Assembly',
+    series: 'SERIES DISCHARGE-PRO',
+    specs: 'Precision Dynamic Balanced Steel Construction',
+    compliance: ['ASABE S343', 'ISO 9001:2015', 'FEMA Spec'],
+    axleLoad: 'Combine & Harvesting',
+    materialGrade: 'Abrasion Resistant High-Yield Alloy',
+    tensileStrength: '650 MPa',
+    yieldStrength: '480 MPa',
+    hardness: '260 BHN',
+    desc: 'Upgraded progressive combine discharge beater engineered to prevent rotor plug-ups, accelerate straw flow, and reduce power demand in tough residue.',
+    img: '/images/prod_rotavator_gearbox_13x23.jpg',
+    keyFeatures: ['Progressive Spiral Flighting Design', 'Computer Dynamically Balanced to G2.5 Spec', 'Reversible Hardened Wear Bars', 'Zero-Vibration High-Speed Rotor Operation']
+  },
+  {
+    id: 'harv-02',
+    category: 'harvesting',
+    categoryLabel: 'Combine & Harvesting Upgrades',
+    title: 'High-Throughput Square Bar Concave (Corn & Soybeans)',
+    series: 'SERIES CONCAVE-SB',
+    specs: 'Heat-Treated Square Bar Alloy Steel',
+    compliance: ['ASTM A36/A514', 'ISO 9001:2015', 'FEMA Spec'],
+    axleLoad: 'Combine & Harvesting',
+    materialGrade: 'Quenched & Tempered Wear-Resistant Steel',
+    tensileStrength: '750 MPa',
+    yieldStrength: '550 MPa',
+    hardness: '320-360 BHN',
+    desc: 'Heavy-duty square bar concaves providing up to 30% cleaner grain samples, reduced rotor loss, and superior threshing action in high-moisture corn and beans.',
     img: '/images/prod_railway_track_plates.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
+    keyFeatures: ['Aggressive Square Bar Threshing Edges', 'Precision Wire Spacing for High Moisture', 'Individually Replaceable Cover Plates', 'Direct Bolt-In OEM Replacement Geometry']
   },
   {
-    id: 'rail-1',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Control Arm Upper, Lower Right, Lower Left - SG 400/18',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Control Arm Upper, Lower Right, Lower Left - SG 400/18 manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
+    id: 'harv-03',
+    category: 'harvesting',
+    categoryLabel: 'Combine & Harvesting Upgrades',
+    title: 'Heavy Feederhouse Chain with High-Density Poly Flights',
+    series: 'SERIES FEED-POLY',
+    specs: 'Chrome Moly Riveted Chain & Ultra-Wear Poly',
+    compliance: ['ISO 9001:2015', 'ASABE S318', 'AEM Spec'],
+    axleLoad: 'Combine & Harvesting',
+    materialGrade: 'Case-Hardened Alloy Pins & UHMW Poly',
+    tensileStrength: '850 MPa',
+    yieldStrength: '620 MPa',
+    hardness: '58-62 HRC Pins',
+    desc: 'Ultra quiet poly flight feeder chain that absorbs rock impacts, prevents stone trap bending, and delivers uninterrupted positive crop feeding.',
+    img: '/images/prod_sprockets.jpg',
+    keyFeatures: ['Impact-Absorbing UHMW Poly Flights', 'Heavy-Duty CA557 Connector Links', 'Reduced Header Infeed Noise', 'Extends Feederhouse Floor Pan Life']
   },
   {
-    id: 'rail-2',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Centering Disc Assembly (All Types) - DIN 17182 GS-20Mn5V',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Centering Disc Assembly (All Types) - DIN 17182 GS-20Mn5V manufactured by Westpoint Industries.',
-    img: '/images/gettyimages-1124259795-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
+    id: 'harv-04',
+    category: 'harvesting',
+    categoryLabel: 'Combine & Harvesting Upgrades',
+    title: 'Wear-Resistant Kile Rotor Inlet Flighting Kit',
+    series: 'SERIES ROTOR-KILE',
+    specs: 'Austenitic Hardfaced Flight Segments',
+    compliance: ['ISO 9001:2015', 'ASTM A532', 'FEMA Standards'],
+    axleLoad: 'Combine & Harvesting',
+    materialGrade: 'Chrome Carbide Hardfaced Alloy',
+    tensileStrength: '690 MPa',
+    yieldStrength: '510 MPa',
+    hardness: '52-56 HRC Surface',
+    desc: 'Extended wear inlet rotor flighting providing smooth uninterrupted crop transition from feederhouse to threshing cylinder with reduced kernel cracking.',
+    img: '/images/prod_brake_head.jpg',
+    keyFeatures: ['Continuous Feeding Transition Profile', 'Chrome Carbide Overlay on Leading Edges', 'Eliminates Crop Bunching at Rotor Nose', 'Simple Bolt-On Installation']
+  },
+
+  // 4. Tillage & Implements
+  {
+    id: 'till-01',
+    category: 'tillage',
+    categoryLabel: 'Tillage & Rotary Implements',
+    title: 'Rotavator Heavy Multi-Speed Gearbox 13x23',
+    series: 'SERIES AGRI-GEAR 13x23',
+    specs: 'Multi-Speed Ratio • Ductile Iron Casting Housing',
+    compliance: ['ISO 9001:2015', 'ASABE S318', 'FEMA Approved'],
+    axleLoad: 'Implement',
+    materialGrade: 'ASTM A536 Grade 65-45-12 Housing & 20MnCr5 Gears',
+    tensileStrength: '680 MPa',
+    yieldStrength: '480 MPa',
+    hardness: '58-62 HRC Gears',
+    desc: 'Heavy-duty multi-speed rotavator gearbox engineered for high-horsepower tractors, seedbed rototillers, and deep cultivation in stony soils.',
+    img: '/images/amsted_rotavator_gearbox.jpg',
+    keyFeatures: ['Precision Crown-Shaved Helical Gears', 'Dual Lip High-Temp Nitrile Oil Seals', 'Integrated Top Oil Level Dipstick', 'Heavy Oil Sump for Thermal Heat Dissipation']
   },
   {
-    id: 'rail-3',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Brake support - GS-20Mn5V',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Brake support - GS-20Mn5V manufactured by Westpoint Industries.',
-    img: 'images/gettyimages-520686084-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
+    id: 'till-02',
+    category: 'tillage',
+    categoryLabel: 'Tillage & Rotary Implements',
+    title: 'Secondary Reduction Rotary Tiller Gearcase 13x25',
+    series: 'SERIES AGRI-GEAR 13x25',
+    specs: 'High-Reduction Planetary Ratio 13:25',
+    compliance: ['ISO 9001:2015', 'AGMA Spec', 'FEMA Standards'],
+    axleLoad: 'Implement',
+    materialGrade: 'High-Grade Spheroidal Graphite Iron',
+    tensileStrength: '720 MPa',
+    yieldStrength: '520 MPa',
+    hardness: '240-270 BHN',
+    desc: 'Severe-duty rotary tiller transmission case with heavy shock load absorbing capability, case-hardened alloy splines, and synthetic gear lubricant compatibility.',
+    img: '/images/amsted_rotavator_gearbox.jpg',
+    keyFeatures: ['High Shock Absorption Rating', 'Precision Robotic Face-Milled Mounting Flanges', 'Tapered Roller Bearing Support', 'Field-Proven Across 50,000+ Operating Hours']
   },
   {
-    id: 'rail-4',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Set Of Console',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Set Of Console manufactured by Westpoint Industries.',
-    img: 'images/gettyimages-169263915-1024x1024 (1).jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
+    id: 'till-03',
+    category: 'tillage',
+    categoryLabel: 'Tillage & Rotary Implements',
+    title: 'Notched Heavy Tillage Disc Harrow Blades 26-Inch',
+    series: 'SERIES DISC-HEAVY 26',
+    specs: 'Boron Steel 50-52 HRC Heat Treated',
+    compliance: ['ASTM A684', 'ISO 5680', 'FEMA Approved'],
+    axleLoad: 'Implement',
+    materialGrade: 'Boron Alloy Implement Steel (AISI 15B35)',
+    tensileStrength: '1450 MPa',
+    yieldStrength: '1200 MPa',
+    hardness: '50-52 HRC',
+    desc: 'Heat-treated concaved notched disc harrow blades providing superior corn stalk residue slicing, soil penetration, and zero-shatter toughness.',
+    img: '/images/prod_centering_disc.jpg',
+    keyFeatures: ['Quenched and Tempered Boron Steel', 'Reinforced Square Axle Arbor Hole', 'Razor-Sharpened Notched Cutting Profile', 'Maximum Resistance to Rock Chipping']
   },
   {
-    id: 'rail-5',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Pin Bracket',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Pin Bracket manufactured by Westpoint Industries.',
-    img: 'images/gettyimages-976893614-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
+    id: 'till-04',
+    category: 'tillage',
+    categoryLabel: 'Tillage & Rotary Implements',
+    title: 'High-Speed Planter Heavy-Duty Hub & Spindle Assembly',
+    series: 'SERIES SEED-HUB HD',
+    specs: 'Triple-Lip Cartridge Seal • 5-Bolt Pattern',
+    compliance: ['ASABE S318', 'ISO 9001:2015', 'SAE J434'],
+    axleLoad: 'Implement',
+    materialGrade: 'Forged 1045 Carbon Steel Spindle & Ductile Hub',
+    tensileStrength: '620 MPa',
+    yieldStrength: '430 MPa',
+    hardness: '220-260 BHN',
+    desc: 'Zero-maintenance planter gauge wheel and coulter hubs with severe-duty labyrinth triple-lip seals to lock out fertilizer salts and abrasive dust.',
+    img: '/images/amsted_bogie_axlebox.jpg',
+    keyFeatures: ['Pre-Greased Maintenance-Free Sealed Bearing Cartridge', 'Forged High-Strength Steel Spindle', 'Precision CNC Drilled 5-Bolt Hub Flange', 'Protected Against Slurry and Soil Ingress']
+  },
+
+  // 5. Drivetrain & Brakes
+  {
+    id: 'drive-01',
+    category: 'drivetrain',
+    categoryLabel: 'Tractor Drivetrain & Brakes',
+    title: 'Heavy Front Wheel Drive (MFWD) Differential Housing',
+    series: 'SERIES DIFF-4WD',
+    specs: 'High-Strength Ductile Iron ASTM A536',
+    compliance: ['ASTM A536', 'ISO 9001:2015', 'SAE J434'],
+    axleLoad: 'Heavy Drawbar',
+    materialGrade: 'Ductile Iron Grade 80-55-06',
+    tensileStrength: '620 MPa',
+    yieldStrength: '420 MPa',
+    hardness: '200-240 BHN',
+    desc: 'Stout differential housings and axle trumpet carrier castings engineered for high-torque mechanical front wheel drive (MFWD) agricultural tractors.',
+    img: '/images/amsted_bogie_axlebox.jpg',
+    keyFeatures: ['High Rigidity Case Prevents Ring & Pinion Deflection', 'Integrated Trunnion Bearing Saddles', 'High-Pressure Hydraulic Porting', '100% CMM Verified Bore Tolerances']
   },
   {
-    id: 'rail-6',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Bump Stop Bracket',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Bump Stop Bracket manufactured by Westpoint Industries.',
-    img: 'images/gettyimages-1020709664-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'rail-7',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Articulation Piece - IS 1030',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Articulation Piece - IS 1030 manufactured by Westpoint Industries.',
-    img: 'images/two-crossing-train-tracks.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'rail-8',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Axlebox Housing - IS 1030',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Axlebox Housing - IS 1030 manufactured by Westpoint Industries.',
-    img: '/images/gettyimages-169263915-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'rail-9',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Front and Rear Draft Lugs - Grade B & C',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Front and Rear Draft Lugs - Grade B & C manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'rail-10',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Railway Track Plates',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Railway Track Plates manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/railroad-tracks-divided-into-two-260nw-2686728089.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'rail-11',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Castings for Buffers',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Castings for Buffers manufactured by Westpoint Industries.',
-    img: '/images/gettyimages-980499052-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'rail-12',
-    category: 'rail',
-    categoryLabel: 'Rail Coach & Bogie Components',
-    title: 'Other railway components',
-    series: 'SERIES RAIL',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Other railway components manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'loco-23',
-    category: 'loco',
-    categoryLabel: 'Components for Locomotives',
-    title: 'Jacking Pad',
-    series: 'SERIES LOCO',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Jacking Pad manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'loco-24',
-    category: 'loco',
-    categoryLabel: 'Components for Locomotives',
-    title: 'Coupler Carrier',
-    series: 'SERIES LOCO',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Coupler Carrier manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/close-train-coupler-260nw-1680899338.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'loco-25',
-    category: 'loco',
-    categoryLabel: 'Components for Locomotives',
-    title: 'Bearing Adaptor Plate Assembly',
-    series: 'SERIES LOCO',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Bearing Adaptor Plate Assembly manufactured by Westpoint Industries.',
-    img: 'images/camber-plates-drift-aluminium-race-600w-576380224.webp',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'loco-26',
-    category: 'loco',
-    categoryLabel: 'Components for Locomotives',
-    title: 'Brake Head for Brake rigging kit',
-    series: 'SERIES LOCO',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Brake Head for Brake rigging kit manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/drum-brake-truck-bus-tractor-260nw-2457408845.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'loco-27',
-    category: 'loco',
-    categoryLabel: 'Components for Locomotives',
-    title: 'Equaliser Spring Seat',
-    series: 'SERIES LOCO',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Equaliser Spring Seat manufactured by Westpoint Industries.',
-    img: '/images/big-industrial-springs-600w-159552263.webp',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'loco-28',
-    category: 'loco',
-    categoryLabel: 'Components for Locomotives',
-    title: 'Fuel Pump Support',
-    series: 'SERIES LOCO',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Fuel Pump Support manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/highprecision-cast-metal-engine-block-260nw-2786927443.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'oem-29',
-    category: 'oem',
-    categoryLabel: 'Components for OEMs',
-    title: '10 Ton Stub Axle',
-    series: 'SERIES OEM',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality 10 Ton Stub Axle manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/suspension-arm-vehicle-on-white-260nw-1232311150.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'oem-30',
-    category: 'oem',
-    categoryLabel: 'Components for OEMs',
-    title: '8 Ton Knuckle',
-    series: 'SERIES OEM',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality 8 Ton Knuckle manufactured by Westpoint Industries.',
-    img: 'images/gettyimages-2234684923-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'oem-31',
-    category: 'oem',
-    categoryLabel: 'Components for OEMs',
-    title: 'Rotor',
-    series: 'SERIES OEM',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Rotor manufactured by Westpoint Industries.',
-    img: 'images/disused-electric-drive-rack-railway-600w-2624945193.webp',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'oem-32',
-    category: 'oem',
-    categoryLabel: 'Components for OEMs',
-    title: 'Eliptcal Pin',
-    series: 'SERIES OEM',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Eliptcal Pin manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/tow-hitch-modern-tractor-safety-260nw-2206903103.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'oem-33',
-    category: 'oem',
-    categoryLabel: 'Components for OEMs',
-    title: 'Sprockets for Undercarriage',
-    series: 'SERIES OEM',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Sprockets for Undercarriage manufactured by Westpoint Industries.',
-    img: 'https://www.shutterstock.com/image-photo/track-drive-gear-bulldozer-sprocket-mechanism-260nw-623455658.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  {
-    id: 'oem-34',
-    category: 'oem',
-    categoryLabel: 'Components for OEMs',
-    title: 'Trailer Components',
-    series: 'SERIES OEM',
-    specs: 'Standard Specification',
-    compliance: ['ISO 9001:2015'],
-    axleLoad: 'Variable',
-    materialGrade: 'Standard Grade',
-    tensileStrength: 'N/A',
-    yieldStrength: 'N/A',
-    hardness: 'N/A',
-    desc: 'High-quality Trailer Components manufactured by Westpoint Industries.',
-    img: 'images/gettyimages-1756783058-1024x1024.jpg',
-    keyFeatures: ['Precision Manufactured', 'Quality Assured', 'Durable Construction']
-  },
-  ];
+    id: 'drive-02',
+    category: 'drivetrain',
+    categoryLabel: 'Tractor Drivetrain & Brakes',
+    title: 'Fade-Resistant Agricultural Trailer Brake Drum',
+    series: 'SERIES AGRI-BRAKE HD',
+    specs: 'High-Carbon Grey Iron with Thermal Cooling Fins',
+    compliance: ['DOT FMVSS 121', 'ISO 9001:2015', 'SAE J661'],
+    axleLoad: 'Heavy Drawbar',
+    materialGrade: 'ASTM A48 Class 35B High-Carbon Grey Iron',
+    tensileStrength: '280 MPa',
+    yieldStrength: '200 MPa',
+    hardness: '210-250 BHN',
+    desc: 'Fade-resistant heavy agricultural brake drums with external radial heat dissipation fins for grain carts, slurry tankers, and heavy farm haulers.',
+    img: '/images/amsted_jacking_pad.jpg',
+    keyFeatures: ['External Heat Dissipation Cooling Fins', 'Precision Lathe-Turned Braking Surface', 'High Thermal Damping to Prevent Heat Cracks', 'Standard 10-Hole Heavy Hub Pilot Pattern']
+  }
+];
 
 interface InteractiveExplorerProps {
   onRequestQuoteForProduct?: (productTitle: string) => void;
@@ -477,28 +367,29 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
   // Available Standards Filter Options
   const standardsList = [
     { id: 'all', label: 'All Standards' },
-    { id: 'RDSO', label: 'RDSO' },
-    { id: 'AAR', label: 'AAR M-201' },
-    { id: 'AREMA', label: 'AREMA' },
-    { id: 'ASTM', label: 'ASTM' },
-    { id: 'IS', label: 'IS / IRS Spec' }
+    { id: 'ASABE', label: 'ASABE S572.1' },
+    { id: 'ASTM', label: 'ASTM A536' },
+    { id: 'ISO', label: 'ISO 11783 (ISOBUS)' },
+    { id: 'FEMA', label: 'FEMA / AEM' },
+    { id: 'SAE', label: 'SAE Ag Standards' }
   ];
 
   // Available Axle Load Filter Options
   const axleLoadList = [
-    { id: 'all', label: 'All Axle Loads' },
-    { id: '22.9', label: '22.9T Freight' },
-    { id: '25.0', label: '25.0T Heavy Freight' },
-    { id: '32.5', label: '32.5T Heavy Haul' },
-    { id: 'High', label: 'High Speed / Pass.' }
+    { id: 'all', label: 'All Equipment Ratings' },
+    { id: 'Heavy', label: 'Heavy Drawbar (>250 HP)' },
+    { id: 'Mid', label: 'Mid-Range (100-250 HP)' },
+    { id: 'High', label: 'Self-Propelled / High Clearance' },
+    { id: 'Implement', label: 'Tillage & Implements' }
   ];
 
   const categories = [
-    { id: 'all', label: 'All Categories' },
-    { id: 'rail', label: 'Rail Coach & Bogie Components' },
-    { id: 'loco', label: 'Components for Locomotives' },
-    { id: 'oem', label: 'Components for OEMs' },
-    { id: 'other', label: 'Other Industries' }
+    { id: 'all', label: 'All Equipment & Parts' },
+    { id: 'sprayers', label: 'Precision Field Sprayers' },
+    { id: 'castings', label: 'Agricultural Castings' },
+    { id: 'harvesting', label: 'Combine & Harvesting' },
+    { id: 'tillage', label: 'Tillage & Implements' },
+    { id: 'drivetrain', label: 'Tractor Drivetrain & Brakes' }
   ];
 
   // Filter Logic
@@ -602,7 +493,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
             </h2>
 
             <p style={{ fontSize: '1.05rem', color: '#4CAF50', lineHeight: 1.6, margin: 0 }}>
-              Search across 100+ AREMA, RDSO &amp; AAR certified railway components, heavy steel castings, and ready-mix concrete formulations. Filter by compliance, load rating, and mechanical tolerances.
+              Search across Agro Foundries precision crop sprayers, heavy agricultural castings, combine upgrades, and implement gearboxes. Filter by compliance, load rating, and mechanical tolerances.
             </p>
           </div>
         )}
@@ -619,7 +510,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                   Component &amp; Technical Spec Explorer
                 </h3>
                 <span style={{ fontSize: '0.825rem', color: '#4CAF50' }}>
-                  Filter by RDSO / AAR standards, material grades, and CAD schematics
+                  Filter by ASABE / ASTM standards, implement categories, and CAD schematics
                 </span>
               </div>
             </div>
@@ -667,7 +558,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                 type="text"
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
-                placeholder="Search part name, spec (e.g. RDSO, CASNUB, M-201, M60), DWG filename..."
+                placeholder="Search machinery, part name, spec (e.g. ASABE, ASTM, ISO, Gearbox, Nozzle)..."
                 style={{
                   width: '100%',
                   padding: '10px 14px 10px 42px',
@@ -912,23 +803,18 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                 color: '#2E7D32'
               }}>
                 <div><strong style={{ color: '#1B5E20' }}>BCNHL:</strong> Bogie Covered Number High-Capacity Length Wagon</div>
-                <div><strong style={{ color: '#1B5E20' }}>BOXNHL:</strong> Bogie Open High Speed Stainless Heavy Load Wagon</div>
-                <div><strong style={{ color: '#1B5E20' }}>BOBRN:</strong> Bogie Open Bottom Rapid Discharge Nitrogen Hopper</div>
-                <div><strong style={{ color: '#1B5E20' }}>CASNUB:</strong> Cast Steel Heavy Freight Wagon Bogie</div>
-                <div><strong style={{ color: '#1B5E20' }}>CMS Frog:</strong> Cast Manganese Steel (12-14% Mn) Crossing Frog</div>
-                <div><strong style={{ color: '#1B5E20' }}>TWS:</strong> Thick Web Switch Point Tongue Rail</div>
-                <div><strong style={{ color: '#1B5E20' }}>RDSO:</strong> Research Designs &amp; Standards Organisation</div>
-                <div><strong style={{ color: '#1B5E20' }}>AAR:</strong> Association of American Railroads</div>
-                <div><strong style={{ color: '#1B5E20' }}>AREMA:</strong> Amer. Railway Engineering &amp; Maint.-of-Way Assoc.</div>
-                <div><strong style={{ color: '#1B5E20' }}>IRS:</strong> Indian Railway Standards</div>
-                <div><strong style={{ color: '#1B5E20' }}>FRA:</strong> Federal Railroad Administration (USA)</div>
-                <div><strong style={{ color: '#1B5E20' }}>APTA:</strong> American Public Transportation Association</div>
-                <div><strong style={{ color: '#1B5E20' }}>5-Axis CNC:</strong> 5-Axis Computer Numerical Control Milling</div>
-                <div><strong style={{ color: '#1B5E20' }}>CMM:</strong> Coordinate Measuring Machine 3D Inspection</div>
-                <div><strong style={{ color: '#1B5E20' }}>BHN:</strong> Brinell Hardness Number</div>
-                <div><strong style={{ color: '#1B5E20' }}>HPC:</strong> High Performance Concrete (M60 Grade)</div>
-                <div><strong style={{ color: '#1B5E20' }}>UHSC:</strong> Ultra High Strength Concrete (M80 Grade)</div>
-                <div><strong style={{ color: '#1B5E20' }}>SCC:</strong> Self-Compacting Concrete (650mm Flow)</div>
+                <div><strong style={{ color: '#1B5E20' }}>ASABE S572.1:</strong> Droplet Size Spectrum &amp; Drift Reduction Spray Standard</div>
+                <div><strong style={{ color: '#1B5E20' }}>ASTM A536:</strong> Standard Spec for Ductile Iron Implement Castings</div>
+                <div><strong style={{ color: '#1B5E20' }}>ISO 11783:</strong> ISOBUS Standardized Tractor &amp; Implement Electronic Interface</div>
+                <div><strong style={{ color: '#1B5E20' }}>PWM:</strong> Pulse Width Modulation Electronic Individual Nozzle Control</div>
+                <div><strong style={{ color: '#1B5E20' }}>FEMA:</strong> Farm Equipment Manufacturers Association (USA)</div>
+                <div><strong style={{ color: '#1B5E20' }}>AEM:</strong> Association of Equipment Manufacturers (USA)</div>
+                <div><strong style={{ color: '#1B5E20' }}>ASTM A48 Class 35:</strong> High-Damping Grey Iron for Tractor Ballast &amp; Weights</div>
+                <div><strong style={{ color: '#1B5E20' }}>SG 65-45-12:</strong> High-Ductility Spheroidal Graphite Implement Castings</div>
+                <div><strong style={{ color: '#1B5E20' }}>AISI 15B35:</strong> Quenched &amp; Tempered Boron Steel Tillage Blades (50-52 HRC)</div>
+                <div><strong style={{ color: '#1B5E20' }}>5-Axis CNC:</strong> Multi-Axis High Precision Machining (±0.02mm Tolerance)</div>
+                <div><strong style={{ color: '#1B5E20' }}>CMM:</strong> Coordinate Measuring Machine 3D Dimensional Inspection</div>
+                <div><strong style={{ color: '#1B5E20' }}>HRC:</strong> Rockwell Hardness C Scale</div>
               </div>
             </div>
           )}
@@ -1005,7 +891,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                     {/* Brand Tag */}
                     <div style={{ marginBottom: '8px' }}>
                       <span style={{ fontSize: '11px', fontWeight: 900, color: '#1B5E20', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-                        WESTPOINT GROUP
+                        Agro Foundries
                       </span>
                     </div>
 

@@ -50,10 +50,10 @@ export const ProductCategories: React.FC = () => {
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#4CAF50' }}>RDSO, AREMA &amp; AAR M-1003 APPROVED DIVISIONS</span>
+              <span style={{ color: '#4CAF50' }}>ASABE, ASTM &amp; ISO 11783 CERTIFIED DIVISIONS</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-              ENTERPRISE PRODUCT DIVISIONS &amp; WAGON SYSTEMS
+              ENTERPRISE MACHINERY DIVISIONS &amp; FIELD SYSTEMS
             </h2>
           </div>
 

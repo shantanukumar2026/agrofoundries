@@ -55,7 +55,7 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
               QUOTATION REQUEST SUBMITTED
             </h3>
             <p style={{ fontSize: '14px', color: '#2E7D32', lineHeight: 1.6, marginBottom: '2rem' }}>
-              Thank you for reaching out. A Westpoint Group Companies metal sales engineer will review your specifications and contact you within 24 business hours.
+              Thank you for reaching out. A Agro Foundries metal sales engineer will review your specifications and contact you within 24 business hours.
             </p>
             <button
               onClick={() => { setSubmitted(false); onClose(); }}
@@ -98,7 +98,7 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>COMPANY *</label>
-                  <input type="text" required placeholder="Railway Corp" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }} />
+                  <input type="text" required placeholder="Farming Corp" style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }} />
                 </div>
               </div>
 
@@ -116,10 +116,10 @@ export const RequestQuoteModal: React.FC<RequestQuoteModalProps> = ({ isOpen, on
               <div>
                 <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '4px' }}>PRODUCT INTEREST</label>
                 <select style={{ width: '100%', padding: '10px 12px', border: '1px solid #E5E7EB', background: '#FFFFFF', fontSize: '13px', color: '#1B5E20', outline: 'none' }}>
-                  <option>Rail Turnout Castings (AREMA Ch. 4)</option>
-                  <option>Forged Locomotive Axles &amp; Wheelsets</option>
-                  <option>AAR Grade E Couplers &amp; Draft Gear</option>
-                  <option>Catenary &amp; Third-Rail Hardware</option>
+                  <option>Agricultural Castings &amp; Forgings</option>
+                  <option>Combine &amp; Harvester Components</option>
+                  <option>Tillage &amp; Implement Machinery</option>
+                  <option>High-Clearance Spray Systems</option>
                   <option>Custom Industrial Forgings &amp; Castings</option>
                 </select>
               </div>

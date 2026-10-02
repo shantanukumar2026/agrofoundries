@@ -3,7 +3,7 @@ import { EXPLORER_PRODUCTS } from './InteractiveExplorer';
 import type { ProductItem } from './InteractiveExplorer';
 import {
   X, ArrowLeft, ArrowRight, ShieldCheck, CheckCircle2, Download,
-  Layers, TrainTrack, Compass, Share2, Printer, Check, Eye, ChevronRight
+  Layers, Compass, Share2, Printer, Check, Eye, ChevronRight
 } from 'lucide-react';
 
 interface ProductDetailPageProps {
@@ -316,12 +316,12 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 {activeMediaTab === 'cad' && (
                   <div style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img
-                      src="/images/bogie_callouts_diagram.png"
-                      alt="CAD Blueprint Technical Callout"
+                      src="/images/usa_industrial_machining.jpg"
+                      alt="CAD Precision Technical Callout"
                       style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '1rem' }}
                     />
                     <div style={{ position: 'absolute', top: '12px', right: '12px', background: 'rgba(27,94,32,0.9)', color: '#FAF6EE', fontSize: '10px', fontWeight: 900, padding: '4px 8px', borderRadius: '2px', border: '1px solid #4CAF50' }}>
-                      AREMA CAD TRUE-TO-CAST
+                      ASABE &bull; ASTM CAD SPECS
                     </div>
                   </div>
                 )}
@@ -365,8 +365,8 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 </div>
 
                 <div style={{ background: '#F0FDF4', border: '1px solid #BBF7D0', padding: '10px 8px', borderRadius: '4px', textAlign: 'center' }}>
-                  <TrainTrack size={16} color="#166534" style={{ margin: '0 auto 4px auto', display: 'block' }} />
-                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#166534', display: 'block' }}>36-TON HAL RATED</span>
+                  <Layers size={16} color="#166534" style={{ margin: '0 auto 4px auto', display: 'block' }} />
+                  <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#166534', display: 'block' }}>FIELD PROVEN QA</span>
                 </div>
               </div>
 
@@ -377,7 +377,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
               {/* Product Series & Code */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                 <span style={{ fontSize: '11px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-                  WESTPOINT GROUP RAIL &amp; INDUSTRIAL DIVISIONS
+                  AGRICULTURAL MANUFACTURING DIVISION
                 </span>
                 <span style={{ color: '#E5E7EB' }}>|</span>
                 <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase' }}>
@@ -490,7 +490,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
 
                 <a
                   href={product.img}
-                  download={`Westpoint-${product.id}-Spec-Sheet.jpg`}
+                  download={`Agro Foundries-${product.id}-Spec-Sheet.jpg`}
                   className="btn-animated"
                   style={{
                     background: '#FAF6EE',

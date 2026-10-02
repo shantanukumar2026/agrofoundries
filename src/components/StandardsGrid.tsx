@@ -6,32 +6,32 @@ export const StandardsGrid: React.FC = () => {
     {
       code: 'ISO 9001:2015',
       name: 'QUALITY MANAGEMENT SYSTEM',
-      desc: 'Certified manufacturing facilities with full material traceability from scrap steel melt to final dispatch.'
+      desc: 'Certified agricultural machinery production facilities with full metallurgical traceability from scrap melt to final field delivery.'
     },
     {
-      code: 'IATF 16949',
-      name: 'HEAVY EQUIPMENT & FORGING QA',
-      desc: 'PPAP Level 3 documentation and defect prevention management across drop forging operations.'
+      code: 'ASABE S572.1',
+      name: 'SPRAY NOZZLE DROPLET SPECTRUM',
+      desc: 'American Society of Agricultural and Biological Engineers nozzle classification for ultra-fine atomization and drift reduction.'
     },
     {
-      code: 'AAR M-1003',
-      name: 'ASSOCIATION OF AMERICAN RAILROADS',
-      desc: 'Quality assurance certification for locomotive wheelsets, axles, knuckles, and cast steel bolsters.'
+      code: 'ASTM A536',
+      name: 'DUCTILE IRON CASTING SPECIFICATION',
+      desc: 'Compliance for high-tensile ductile iron (Grade 65-45-12 & 80-55-06) for implement housings, roller rings, and planetary carriers.'
     },
     {
-      code: 'AREMA CHAPTER 4',
-      name: 'RAILWAY ENGINEERING TRACKWORK',
-      desc: 'Full specification compliance for manganese frog crossovers, turnout switch heels, and tie plates.'
+      code: 'ISO 11783 (ISOBUS)',
+      name: 'TRACTOR & IMPLEMENT BUS STANDARD',
+      desc: 'Seamless electronic communication protocol between tractor cab consoles, automatic boom leveling, and variable-rate controllers.'
     },
     {
-      code: 'EN 13674',
-      name: 'EUROPEAN RAILWAY APPLICATIONS',
-      desc: 'Material composition and fatigue resistance benchmarks for transit catenary hardware and rail fasteners.'
+      code: 'ASABE S318',
+      name: 'SAFETY FOR AGRICULTURAL FIELD EQUIPMENT',
+      desc: 'Rigorous shielding and structural integrity standards for high-torque PTO drivelines, rotary cutters, and rotating assemblies.'
     },
     {
-      code: 'FRA RULE 213',
-      name: 'FEDERAL RAILROAD ADMINISTRATION',
-      desc: 'Safety standards for Class 1 through Class 9 heavy haul freight and high-speed passenger lines.'
+      code: 'FEMA & AEM COMPLIANT',
+      name: 'FARM EQUIPMENT MANUFACTURERS ALLIANCE',
+      desc: 'Active North American industry standards for equipment reliability, hydraulic safety tolerances, and field warranty protection.'
     }
   ];
 
@@ -44,14 +44,14 @@ export const StandardsGrid: React.FC = () => {
       <div className="container-custom" style={{ position: 'relative', zIndex: 10 }}>
 
         {/* Section Header */}
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#4CAF50' }}>CERTIFICATIONS &amp; GLOBAL COMPLIANCE</span>
+              <span style={{ color: '#4CAF50' }}>CERTIFICATIONS &amp; NORTH AMERICAN COMPLIANCE</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-              INTERNATIONAL STANDARDS
+              AGRICULTURAL ENGINEERING STANDARDS
             </h2>
           </div>
 
@@ -61,76 +61,65 @@ export const StandardsGrid: React.FC = () => {
           </a>
         </div>
 
-        {/* 6 High-Contrast Certified Standards Cards Grid */}
-        <div className="grid-responsive-3" style={{ marginBottom: '2.5rem' }}>
+        {/* Simple Standards Logo Strip */}
+        <div style={{ display: 'flex', flexWrap: 'nowrap', gap: '1rem', justifyContent: 'space-between', marginBottom: '1.5rem', overflowX: 'auto', paddingBottom: '0.5rem' }}>
           {standards.map((std, idx) => (
             <div
               key={idx}
-              className="card-hover-industrial"
               style={{
-                background: '#F8F9FA',
-                border: '1px solid #D1D5DB',
-                padding: '2rem',
+                flexShrink: 0,
+                background: '#FFFFFF',
+                border: '1.5px solid #E5E7EB',
+                borderRadius: '6px',
+                padding: '1rem 1.5rem',
                 display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                borderRadius: '2px',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
+                alignItems: 'center',
+                gap: '1rem',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.02)',
+                transition: 'all 0.2s',
               }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = '#4CAF50'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(76,175,80,0.1)'; }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = '#E5E7EB'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.02)'; }}
             >
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', borderBottom: '1px solid #E5E7EB', paddingBottom: '0.75rem' }}>
-                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#111827', letterSpacing: '0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
-                    {std.code}
-                  </span>
-                  <div style={{ width: '28px', height: '28px', borderRadius: '2px', background: '#1B5E20', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <ShieldCheck size={16} color="#FFFFFF" />
-                  </div>
-                </div>
-
-                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#111827', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '0.65rem', fontFamily: "'Manrope', sans-serif !important" }}>
-                  {std.name}
-                </strong>
-
-                <p style={{ fontSize: '13px', color: '#2E7D32', lineHeight: 1.6, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-                  {std.desc}
-                </p>
-              </div>
+              <ShieldCheck size={24} color="#1B5E20" />
+              <span style={{ fontSize: '1rem', fontWeight: 900, color: '#111827', letterSpacing: '0.02em', fontFamily: "'Manrope', sans-serif !important", whiteSpace: 'nowrap' }}>
+                {std.code}
+              </span>
             </div>
           ))}
         </div>
 
-        {/* High-Impact Visual Banner: Train Wheels & Gearboxes */}
+        {/* High-Impact Visual Banner: USA Agricultural Machinery */}
         <div className="grid-responsive-2">
 
           <div className="img-hover-zoom" style={{ border: '1px solid #D1D5DB', borderRadius: '2px', overflow: 'hidden', position: 'relative', height: '220px' }}>
             <img
-              src="/images/real_train_wheelset_stock.jpg"
-              alt="Heavy Duty Locomotive Wheelset & Gear Assembly"
+              src="/images/red_sprayer_patriot.jpg"
+              alt="High-Clearance Boom Sprayer in American Field"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27,94,32,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-                AAR M-101 CERTIFIED WHEELSETS
+              <span style={{ fontSize: '11.5px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
+                ASABE CERTIFIED SPRAY SYSTEMS
               </span>
-              <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-                Heavy Freight Train Axle &amp; Wheel Assemblies
+              <h3 style={{ fontSize: '20px', fontWeight: 900, color: '#FFFFFF', margin: '4px 0 0 0', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
+                Commercial High-Clearance Crop Sprayers &amp; Booms
               </h3>
             </div>
           </div>
 
           <div className="img-hover-zoom" style={{ border: '1px solid #D1D5DB', borderRadius: '2px', overflow: 'hidden', position: 'relative', height: '220px' }}>
             <img
-              src="/images/gettyimages-144461984-1024x1024 (1).jpg"
-              alt="Machined Industrial Rotavator Gearboxes"
+              src="/images/red_combine_axialflow.jpg"
+              alt="American Grain Harvest & Tillage Machinery"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27,94,32,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: '10.5px', fontWeight: 900, color: '#4CAF50', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-                PRECISION GEARING DIVISIONS
+              <span style={{ fontSize: '11.5px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
+                PRECISION HARVEST &amp; TILLAGE
               </span>
-              <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-                Machined Rotavator Gearboxes &amp; Sprockets
+              <h3 style={{ fontSize: '20px', fontWeight: 900, color: '#FFFFFF', margin: '4px 0 0 0', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
+                Heavy-Duty Rotavator Gearboxes &amp; Combine Upgrades
               </h3>
             </div>
           </div>

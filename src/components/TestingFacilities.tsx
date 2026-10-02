@@ -1,97 +1,67 @@
 import React from 'react';
-import { Microscope, Activity, Flame, ShieldAlert, Binary, Building, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const TestingFacilities: React.FC = () => {
   const tests = [
-    {
-      title: 'MECHANICAL ENDURANCE TESTING',
-      desc: 'Tensile yield strength, Charpy V-notch sub-zero impact endurance, and Brinell hardness testing for heavy freight axles.',
-      icon: Activity
-    },
-    {
-      title: 'SPECTROMETRY CHEMICAL ANALYSIS',
-      desc: 'Argon-shielded optical emission spectrometry verifying carbon, manganese, and alloy dosing to exact AREMA specs.',
-      icon: Flame
-    },
-    {
-      title: '100% VOLUMETRIC NDT TESTING',
-      desc: '100% volumetric ultrasonic flaw detection and magnetic particle scanning per AAR M-1003 rules.',
-      icon: ShieldAlert
-    },
-    {
-      title: 'metal SOLIDIFICATION',
-      desc: 'Microstructural grain boundary evaluation, inclusion rating, and 3D solidification porosity analysis.',
-      icon: Microscope
-    },
-    {
-      title: 'CMM LASER DIMENSIONAL SCAN',
-      desc: 'Coordinate Measuring Machine (CMM) laser scanning verifying CNC tolerances within ±0.05mm on turnout frogs.',
-      icon: Binary
-    },
-    {
-      title: 'ACCREDITED LAB FACILITIES',
-      desc: 'AAR & ISO 17025 accredited in-house testing laboratory with full heat certificate traceability.',
-      icon: Building
-    }
+    'Mechanical Endurance & Fatigue Testing',
+    'Spectrometry Chemical Dosing (ASTM A536)',
+    '100% Hydrostatic & Boom Flow Validation',
+    'Metallographic Solidification & Nodule Count',
+    'CMM Laser Dimensional Audits',
+    'ISO/IEC 17025 Accredited In-House Lab'
   ];
 
   return (
-    <section id="testing" className="section-full-vh" style={{ background: '#F8F9FA', borderBottom: '1px solid #E5E7EB' }}>
+    <section id="testing" className="section-full-vh" style={{ background: '#F8F9FA', borderBottom: '1px solid #E5E7EB', padding: '5rem 0' }}>
       <div className="container-custom">
-
-        {/* Section Header */}
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
-          <div>
-            <div className="eyebrow">
-              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#4CAF50' }}>IN-HOUSE QUALITY ASSURANCE &amp; NDT</span>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+          
+          {/* Left Column - Graphic/Image */}
+          <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+            <img 
+              src="/images/usa_industrial_machining.jpg" 
+              alt="Quality Assurance Laboratory" 
+              style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', aspectRatio: '4/3' }}
+            />
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1.5rem', background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)' }}>
+              <span style={{ color: '#fff', fontWeight: 700, fontSize: '1.1rem' }}>State-of-the-Art QA Facilities</span>
             </div>
-            <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-              TESTING FACILITIES &amp; LABS
-            </h2>
           </div>
 
-          <a href="#contact" className="link-hover-arrow">
-            <span>REQUEST LAB TEST REPORTS</span>
-            <ArrowRight size={14} color="#4CAF50" />
-          </a>
-        </div>
+          {/* Right Column - Clean Text List */}
+          <div>
+            <div className="eyebrow" style={{ marginBottom: '1rem' }}>
+              <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
+              <span style={{ color: '#4CAF50', fontWeight: 700 }}>QUALITY ASSURANCE & NDT</span>
+            </div>
+            <h2 style={{ fontSize: '2.5rem', color: '#111827', fontWeight: 900, marginBottom: '1.5rem', lineHeight: 1.1, textTransform: 'uppercase' }}>
+              Testing Facilities & Labs
+            </h2>
+            <p style={{ color: '#4B5563', fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '2rem' }}>
+              We ensure uncompromising quality and traceability for every component through our fully equipped, accredited in-house testing laboratories.
+            </p>
 
-        {/* 6 High-Contrast High-Legibility Cards Grid */}
-        <div className="grid-responsive-3">
-          {tests.map((test, idx) => {
-            const IconComp = test.icon;
-            return (
-              <div
-                key={idx}
-                className="card-hover-industrial"
-                style={{
-                  padding: '2rem 1.75rem',
-                  background: '#FFFFFF',
-                  border: '1px solid #D1D5DB',
-                  borderRadius: '2px',
-                  display: 'flex',
-                  gap: '1.25rem',
-                  alignItems: 'flex-start',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
-                }}
-              >
-                <div style={{ width: '44px', height: '44px', background: '#1B5E20', color: '#fff', borderRadius: '2px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid #4CAF50' }}>
-                  <IconComp size={22} color="#fff" />
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '13.5px', fontWeight: 900, color: '#111827', letterSpacing: '0.04em', margin: '0 0 0.65rem 0', textTransform: 'uppercase', lineHeight: 1.35, fontFamily: "'Manrope', sans-serif !important" }}>
-                    {test.title}
-                  </h3>
-                  <p style={{ fontSize: '13px', color: '#1B5E20', lineHeight: 1.6, margin: 0, fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
-                    {test.desc}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2.5rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {tests.map((test, idx) => (
+                <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <CheckCircle2 size={24} color="#4CAF50" style={{ flexShrink: 0 }} />
+                  <span style={{ fontSize: '1.05rem', color: '#1F2937', fontWeight: 600 }}>{test}</span>
+                </li>
+              ))}
+            </ul>
 
+            <a href="#contact" className="btn-animated" style={{ 
+              display: 'inline-flex', alignItems: 'center', gap: '8px', 
+              background: '#1B5E20', color: '#fff', padding: '14px 28px', 
+              borderRadius: '4px', fontWeight: 700, textDecoration: 'none',
+              transition: 'background 0.3s'
+            }}>
+              <span>REQUEST LAB REPORTS</span>
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
   );

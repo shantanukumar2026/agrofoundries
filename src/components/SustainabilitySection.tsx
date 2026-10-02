@@ -19,7 +19,7 @@ export const SustainabilitySection: React.FC = () => {
             </h2>
 
             <p style={{ fontSize: '1rem', color: '#2E7D32', lineHeight: 1.7, marginBottom: '2rem', fontWeight: 500, maxWidth: '640px', fontFamily: "'Manrope', sans-serif !important" }}>
-              Westpoint Group Companies operates electric arc and induction melting furnaces powered by 100% recycled structural scrap steel. Combined with closed-loop thermal sand reclamation, our foundries minimize environmental impact without compromising fatigue endurance or AREMA standards.
+              Agro Foundries operates electric arc and induction melting furnaces powered by 100% recycled structural scrap steel. Combined with closed-loop thermal sand reclamation, our foundries minimize environmental impact without compromising fatigue endurance or AREMA standards.
             </p>
 
             {/* 3 Factual Sustainability Pillar Cards */}
@@ -70,7 +70,7 @@ export const SustainabilitySection: React.FC = () => {
             <div className="img-hover-zoom" style={{ border: '1px solid #E5E7EB', background: '#FAF6EE' }}>
               <img 
                 src="/images/rail_trackwork_mfg.png" 
-                alt="Westpoint Environmental Heavy Rail metal Foundry" 
+                alt="Agro Foundries Environmental Heavy Rail metal Foundry" 
                 style={{ width: '100%', height: '360px', objectFit: 'cover', display: 'block' }}
               />
             </div>

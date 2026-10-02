@@ -59,12 +59,12 @@ export const WatchVideoModal: React.FC<WatchVideoModalProps> = ({ isOpen, onClos
               DOCUMENTARY REEL
             </span>
             <h4 style={{ fontSize: '15px', fontWeight: 800, margin: '2px 0 0 0', color: '#F5F2EB' }}>
-              Westpoint Group Companies Electric Induction &amp; Forging Operations
+              Agro Foundries Electric Induction &amp; Forging Operations
             </h4>
           </div>
 
           <span style={{ fontSize: '11px', color: '#A3B5AC' }}>
-            AAR M-1003 &amp; AREMA Compliant Facility
+            ASABE &amp; ISO 9001 Compliant Facility
           </span>
         </div>
       </div>

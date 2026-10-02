@@ -3,28 +3,28 @@ import React from 'react';
 export const IndustriesWeServe: React.FC = () => {
   const industries = [
     {
-      title: 'CLASS I FREIGHT RAILWAYS',
-      img: '/images/real_rail_track_stock.jpg'
+      title: 'COMMERCIAL ROW CROP GROWERS',
+      img: '/images/red_sprayer_patriot.jpg'
     },
     {
-      title: 'URBAN TRANSIT & METRO',
-      img: '/images/real_train_wheelset_stock.jpg'
+      title: 'AGRICULTURAL OEM MACHINERY',
+      img: '/images/usa_industrial_machining.jpg'
     },
     {
-      title: 'HEAVY HAUL MINING RAIL',
-      img: '/images/real_steel_gears_stock.jpg'
+      title: 'ORCHARDS & SPECIALTY CROPS',
+      img: '/images/red_tractor_magnum.jpg'
     },
     {
-      title: 'RAILWAY SWITCH & TURNOUTS',
-      img: '/images/real_cnc_machining_stock.jpg'
+      title: 'TILLAGE & FIELD CONTRACTORS',
+      img: '/images/red_tractor_harvest_field.jpg'
     },
     {
-      title: 'LOCOMOTIVE BOGIES & AXLES',
-      img: '/images/real_metal_casting_stock.jpg'
+      title: 'HIGH-OUTPUT COMBINE HARVEST',
+      img: '/images/red_combine_axialflow.jpg'
     },
     {
-      title: 'HEAVY FREIGHT CORRIDORS',
-      img: '/images/trackside_turnout_castings_2.jpg'
+      title: 'FARM EQUIPMENT DEALER NETWORKS',
+      img: '/images/red_tractor_steiger.jpg'
     }
   ];
 
@@ -36,10 +36,10 @@ export const IndustriesWeServe: React.FC = () => {
         <div style={{ marginBottom: '3rem' }}>
           <div className="eyebrow">
             <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#4CAF50' }} />
-            <span style={{ color: '#4CAF50' }}>GLOBAL RAILWAY SECTOR COVERAGE</span>
+            <span style={{ color: '#4CAF50' }}>NATIONWIDE AGRICULTURAL SECTOR COVERAGE</span>
           </div>
           <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-            RAILWAY SECTORS WE SERVE
+            AGRICULTURAL SECTORS WE SERVE
           </h2>
         </div>
 
@@ -66,7 +66,7 @@ export const IndustriesWeServe: React.FC = () => {
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(0deg, rgba(27, 94, 32, 0.95) 0%, rgba(20, 61, 46, 0.3) 60%, transparent 100%)' }} />
               
               <div style={{ position: 'relative', zIndex: 10, padding: '1.25rem 1rem', height: '100%', display: 'flex', alignItems: 'flex-end' }}>
-                <h3 style={{ fontSize: '12px', fontWeight: 900, color: '#FAF6EE', margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.25, fontFamily: "'Manrope', sans-serif !important" }}>
+                <h3 style={{ fontSize: '15px', fontWeight: 900, color: '#FAF6EE', margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.35, fontFamily: "'Manrope', sans-serif !important" }}>
                   {ind.title}
                 </h3>
               </div>

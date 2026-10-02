@@ -8,40 +8,40 @@ interface ProductShowcaseStripProps {
 export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = ({ onOpenProductDetail }) => {
   const parts = [
     {
-      title: 'JACKING PAD',
-      fullTitle: 'Jacking Pad for Diesel Locomotives',
-      img: '/images/amsted_jacking_pad.jpg',
-      specs: 'AAR M-201 Grade E'
+      title: 'TRACTORS',
+      fullTitle: 'Heavy-Duty Farm Tractors',
+      img: 'https://images.unsplash.com/photo-1635438622580-e5fd8ca7096e?q=80&w=800&auto=format&fit=crop',
+      specs: 'Field Power & Towing'
     },
     {
-      title: 'BRAKE HEAD',
-      fullTitle: 'Brake Head for Locomotives',
-      img: '/images/amsted_brake_head.jpg',
-      specs: 'ASTM A536 Ductile Iron'
+      title: 'COMBINE HARVESTERS',
+      fullTitle: 'Combine Harvesters for Grain',
+      img: 'https://images.unsplash.com/photo-1536719504278-9cfcf309f376?q=80&w=800&auto=format&fit=crop',
+      specs: 'Efficient Crop Harvesting'
     },
     {
-      title: 'AXLEBOX HOUSING',
-      fullTitle: 'Finish Machined Axlebox Housing',
-      img: '/images/amsted_bogie_axlebox.jpg',
-      specs: 'Forged Carbon Steel'
+      title: 'SEEDERS & PLANTERS',
+      fullTitle: 'Precision Seeders & Planters',
+      img: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop',
+      specs: 'Accurate Seed Placement'
     },
     {
-      title: 'CENTERING DISC',
-      fullTitle: 'Finish Machined Centering Disc',
-      img: '/images/amsted_centering_disc.jpg',
-      specs: 'Precision CNC Machined'
+      title: 'PLOWS & TILLAGE',
+      fullTitle: 'Plows and Soil Tillage Equipment',
+      img: 'https://images.unsplash.com/photo-1635438622580-e5fd8ca7096e?q=80&w=800&auto=format&fit=crop',
+      specs: 'Soil Preparation'
     },
     {
-      title: 'RAILWAY TRACK PLATE',
-      fullTitle: 'Railway Track Plates',
-      img: '/images/amsted_track_plate.jpg',
-      specs: 'AREMA Ch. 4 Manganese'
+      title: 'CROP SPRAYERS',
+      fullTitle: 'Self-Propelled Crop Sprayers',
+      img: 'https://images.unsplash.com/photo-1536719504278-9cfcf309f376?q=80&w=800&auto=format&fit=crop',
+      specs: 'Fertilizer & Weed Control'
     },
     {
-      title: 'ROTAVATOR GEARBOX',
-      fullTitle: 'Rotavator Gearbox Casting 13 X 23',
-      img: '/images/amsted_rotavator_gearbox.jpg',
-      specs: 'Electric Arc Cast Steel'
+      title: 'HAY BALERS',
+      fullTitle: 'Round and Square Hay Balers',
+      img: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop',
+      specs: 'Harvest Collection'
     }
   ];
 
@@ -57,10 +57,10 @@ export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = ({ onOp
         <div style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
           <div className="eyebrow" style={{ justifyContent: 'center' }}>
             <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-            <span style={{ color: '#4CAF50' }}>PRECISION METAL CASTINGS &amp; FORGINGS</span>
+            <span style={{ color: '#4CAF50' }}>PRECISION AGRICULTURAL CASTINGS &amp; MACHINED PARTS</span>
           </div>
           <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-            CRITICAL RAIL &amp; INDUSTRIAL COMPONENTS
+            CRITICAL AGRICULTURAL &amp; IMPLEMENT COMPONENTS
           </h2>
         </div>
 
@@ -106,15 +106,15 @@ export const ProductShowcaseStrip: React.FC<ProductShowcaseStripProps> = ({ onOp
 
               {/* Product Label & Specs */}
               <div>
-                <h3 style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', margin: '0 0 5px 0', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Manrope', sans-serif !important" }}>
+                <h3 style={{ fontSize: '14.5px', fontWeight: 900, color: '#FFFFFF', margin: '0 0 6px 0', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Manrope', sans-serif !important" }}>
                   {item.title}
                 </h3>
-                <span style={{ fontSize: '10px', color: '#69F0AE', fontWeight: 800, display: 'block', marginBottom: '10px', letterSpacing: '0.04em', fontFamily: "'Manrope', sans-serif !important" }}>
+                <span style={{ fontSize: '12px', color: '#69F0AE', fontWeight: 800, display: 'block', marginBottom: '10px', letterSpacing: '0.04em', fontFamily: "'Manrope', sans-serif !important" }}>
                   {item.specs}
                 </span>
 
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '8px' }}>
-                  <span style={{ fontSize: '9.5px', color: '#A5D6A7', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '10px' }}>
+                  <span style={{ fontSize: '11px', color: '#A5D6A7', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                     VIEW SPECS
                   </span>
                   <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(76, 175, 80, 0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

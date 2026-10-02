@@ -64,11 +64,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* TIGHT CORPORATE SECTION SPACING */
+/* TIGHT CORPORATE SECTION SPACING & SCROLL ANIMATION */
 .section-full-vh {
   padding: 3.5rem 0;
   position: relative;
   box-sizing: border-box;
+}
+
+.reveal-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h1, h2, h3, h4, h5, h6 {

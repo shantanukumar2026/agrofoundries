@@ -31,40 +31,40 @@ export const Footer: React.FC = () => {
   };
 
   const services = [
-    'Manganese Turnout Frogs',
-    'Forged Wheelsets & Axles',
-    'Locomotive Bogie Castings',
-    'Draft Gear & Coupler Knuckles',
-    'Track Tie Plates & Fasteners',
-    'Custom Rail Patterns & Tooling'
+    'High-Clearance Boom Sprayers',
+    'Ductile Iron Implement Castings',
+    'Cambridge Packer Roller Rings',
+    'Rotavator Multi-Speed Gearboxes',
+    'Combine Discharge Beaters',
+    'Custom Tooling & CAD Patterns'
   ];
 
   const solutions = [
-    'AREMA Trackwork Engineering',
-    'AAR M-1003 QA Certification',
-    'Electric Induction Steel Melting',
-    'Ultrasonic NDT & Testing Lab',
-    'Heavy-Axle-Load Track Systems',
-    'Class I Railroad Supply Chain'
+    'ASABE S572.1 Drift Control',
+    'ASTM A536 Ductile Metallurgy',
+    'Electric Induction Melting',
+    'ISO 17025 Testing & NDT Lab',
+    'High-Acreage Crop Protection',
+    'North American Dealer Network'
   ];
 
   const companyLinks = [
-    'About Westpoint Group',
-    'metal Engineering Team',
-    'Foundry & Forging Facilities',
-    'Rail Network Vendor Status',
-    'Contact Enterprise Sales'
+    'About Agro Foundries',
+    'Agricultural Engineering Team',
+    'Foundry & CNC Machining Centers',
+    'USDA / FEMA Compliance Status',
+    'Contact Farm Machinery Sales'
   ];
 
   const industryPills = [
-    'Class I Freight Corridors',
-    'Urban Passenger Transit & Metro',
-    'High-Speed Passenger Rail',
-    'Heavy-Haul Mining Rail',
-    'Locomotive & Rolling Stock',
-    'Railway Switch & Turnouts',
-    'Commuter & Intercity Lines',
-    'Rail Maintenance-of-Way (MOW)'
+    'Commercial Row Crop Growers',
+    'Agricultural OEM Machinery',
+    'Orchards & Specialty Crops',
+    'Tillage & Field Contractors',
+    'High-Output Combine Harvest',
+    'Farm Equipment Dealer Networks',
+    'Cotton & Grain Production',
+    'Custom Aerial & Boom Spraying'
   ];
 
   return (
@@ -83,7 +83,7 @@ export const Footer: React.FC = () => {
 
             {/* Mission Statement */}
             <p style={{ fontSize: '13px', color: 'rgba(255, 255, 255, 0.85)', lineHeight: 1.65, margin: '0 0 1.75rem 0', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-              Westpoint Group manufactures heavy-duty steel castings, forged axles, and track switch components for Class I freight railroads and urban passenger transit systems across North America.
+              Agro Foundries manufactures high-performance crop sprayers, heavy-duty ductile iron implement castings, rotavator gearboxes, and precision combine parts for American commercial farming operations.
             </p>
 
             {/* Contact Rows with Rounded Icon Pills */}
@@ -105,9 +105,9 @@ export const Footer: React.FC = () => {
                   <Phone size={15} color="#81C784" />
                 </div>
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'center', fontWeight: 700, fontFamily: "'Manrope', sans-serif !important" }}>
-                  <a href="tel:6038383333" style={{ color: '#FFFFFF', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>603 838 3333</a>
+                  <a href="tel:5550198383" style={{ color: '#FFFFFF', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>+1 (555) 019-8383</a>
                   <span style={{ color: '#4CAF50' }}>/</span>
-                  <a href="tel:6038383222" style={{ color: '#FFFFFF', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>603 838 3222</a>
+                  <a href="tel:5550198384" style={{ color: '#FFFFFF', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>+1 (555) 019-8384</a>
                 </div>
               </div>
 
@@ -117,8 +117,8 @@ export const Footer: React.FC = () => {
                   <Mail size={15} color="#81C784" />
                 </div>
                 <div>
-                  <a href="mailto:foundry@westpointndustries.com" style={{ color: '#FFFFFF', textDecoration: 'none', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
-                    foundry@westpointndustries.com
+                  <a href="mailto:info@agrofoundries.com" style={{ color: '#FFFFFF', textDecoration: 'none', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
+                    info@agrofoundries.com
                   </a>
                 </div>
               </div>
@@ -230,8 +230,8 @@ export const Footer: React.FC = () => {
                 </h4>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                   {services.map((item, idx) => (
-                    <li key={idx}>
-                      <a href="#products" style={{ color: '#FFFFFF', textDecoration: 'none', fontSize: '13px', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
+                    <li key={idx} style={{ marginBottom: '0.4rem' }}>
+                      <a href="#products" style={{ color: '#FFFFFF', textDecoration: 'none', fontSize: '14.5px', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
                         {item}
                       </a>
                     </li>
@@ -246,8 +246,8 @@ export const Footer: React.FC = () => {
                 </h4>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                   {solutions.map((item, idx) => (
-                    <li key={idx}>
-                      <a href="#standards" style={{ color: '#FFFFFF', textDecoration: 'none', fontSize: '13px', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
+                    <li key={idx} style={{ marginBottom: '0.4rem' }}>
+                      <a href="#standards" style={{ color: '#FFFFFF', textDecoration: 'none', fontSize: '14.5px', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
                         {item}
                       </a>
                     </li>
@@ -262,8 +262,8 @@ export const Footer: React.FC = () => {
                 </h4>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                   {companyLinks.map((item, idx) => (
-                    <li key={idx}>
-                      <a href="#about" style={{ color: '#FFFFFF', textDecoration: 'none', fontSize: '13px', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
+                    <li key={idx} style={{ marginBottom: '0.4rem' }}>
+                      <a href="#about" style={{ color: '#FFFFFF', textDecoration: 'none', fontSize: '14.5px', fontWeight: 600, transition: 'color 0.2s', fontFamily: "'Manrope', sans-serif !important" }} onMouseEnter={e => e.currentTarget.style.color = '#A5D6A7'} onMouseLeave={e => e.currentTarget.style.color = '#FFFFFF'}>
                         {item}
                       </a>
                     </li>
@@ -393,13 +393,12 @@ export const Footer: React.FC = () => {
               )}
             </div>
 
-            {/* AAR & AREMA Quality Certification Badge Card */}
             <div style={{ padding: '1.25rem 1.5rem', borderRadius: '8px', background: 'rgba(255, 255, 255, 0.06)', border: '1px solid rgba(76, 175, 80, 0.35)' }}>
-              <div style={{ fontSize: '11px', fontWeight: 900, color: '#A5D6A7', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>
-                AAR M-1003 &amp; AREMA QUALITY ACCREDITATION
+              <div style={{ fontSize: '12px', fontWeight: 900, color: '#A5D6A7', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>
+                ASABE &amp; ISO 9001 QUALITY ACCREDITATION
               </div>
-              <p style={{ fontSize: '12.5px', color: 'rgba(255, 255, 255, 0.85)', lineHeight: 1.55, margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
-                All heavy rail components and trackwork castings are manufactured under ISO 9001:2015 certification with 100% volumetric NDT and full heat-code traceability.
+              <p style={{ fontSize: '13.5px', color: 'rgba(255, 255, 255, 0.85)', lineHeight: 1.55, margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
+                All agricultural machinery components and implement castings are manufactured under ISO 9001:2015 certification with 100% volumetric NDT and full heat-code traceability.
               </p>
             </div>
 
@@ -408,116 +407,6 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* ==================== GROUP ENTERPRISES & ASSOCIATIONS STRIP ==================== */}
-      <div style={{
-        background: 'rgba(0, 0, 0, 0.25)',
-        borderTop: '1px solid rgba(255, 255, 255, 0.12)',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
-        padding: '2.5rem 0'
-      }}>
-        <div className="container-custom" style={{ paddingLeft: '2rem', paddingRight: '2.5rem' }}>
-          <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-            <div>
-              <span style={{ fontSize: '11px', fontWeight: 900, color: '#81C784', letterSpacing: '0.14em', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
-                Westpoint Corporate Network
-              </span>
-              <h4 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#FFFFFF', margin: 0, letterSpacing: '-0.01em', fontFamily: "'Manrope', sans-serif !important" }}>
-                Westpoint Group of Enterprises &amp; Associated Divisions
-              </h4>
-            </div>
-            <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.75)', fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
-              Integrated Rail, Water, Infrastructure &amp; Metallurgy
-            </span>
-          </div>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))',
-            gap: '1.5rem'
-          }}>
-            {/* 01 Westpoint Infrastructure */}
-            <div style={{
-              background: '#FFFFFF',
-              borderRadius: '10px',
-              padding: '1.4rem 1.6rem',
-              boxShadow: '0 6px 20px rgba(0,0,0,0.25)',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              border: '1.5px solid rgba(76, 175, 80, 0.3)',
-              transition: 'transform 0.2s, box-shadow 0.2s'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                <img
-                  src="/logos/westpoint-infrastructure.png"
-                  alt="Westpoint Infrastructure Logo"
-                  style={{ height: '46px', width: 'auto', objectFit: 'contain' }}
-                />
-                <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#1B5E20', background: '#E8F5E9', padding: '4px 10px', borderRadius: '9999px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                  Infrastructure Division
-                </span>
-              </div>
-              <p style={{ fontSize: '12.5px', color: '#4A5568', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-                Heavy rail trackwork, transit castings, rolling stock forgings, base plates, and metallurgical infrastructure engineering.
-              </p>
-            </div>
-
-            {/* 02 Westpoint Water */}
-            <div style={{
-              background: '#FFFFFF',
-              borderRadius: '10px',
-              padding: '1.4rem 1.6rem',
-              boxShadow: '0 6px 20px rgba(0,0,0,0.25)',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              border: '1.5px solid rgba(76, 175, 80, 0.3)',
-              transition: 'transform 0.2s, box-shadow 0.2s'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                <img
-                  src="/logos/westpoint-water.png"
-                  alt="Westpoint Water Logo"
-                  style={{ height: '46px', width: 'auto', objectFit: 'contain' }}
-                />
-                <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#1B5E20', background: '#E8F5E9', padding: '4px 10px', borderRadius: '9999px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                  Water Division
-                </span>
-              </div>
-              <p style={{ fontSize: '12.5px', color: '#4A5568', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-                Advanced industrial water management, municipal hydraulics, heavy ductile pumping systems, and environmental fluid infrastructure.
-              </p>
-            </div>
-
-            {/* 03 Westpoint Group Companies */}
-            <div style={{
-              background: '#FFFFFF',
-              borderRadius: '10px',
-              padding: '1.4rem 1.6rem',
-              boxShadow: '0 6px 20px rgba(0,0,0,0.25)',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              border: '1.5px solid rgba(76, 175, 80, 0.3)',
-              transition: 'transform 0.2s, box-shadow 0.2s'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                <img
-                  src="/logos/logo-white.png"
-                  alt="Westpoint Group Companies Logo"
-                  style={{ height: '46px', width: 'auto', objectFit: 'contain' }}
-                />
-                <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#1B5E20', background: '#E8F5E9', padding: '4px 10px', borderRadius: '9999px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                  Parent Enterprise
-                </span>
-              </div>
-              <p style={{ fontSize: '12.5px', color: '#4A5568', lineHeight: 1.5, margin: 0, fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-                Global parent holding conglomerate coordinating specialized foundries, precision CNC machining complexes, and supply logistics worldwide.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* ==================== BOTTOM FOOTER BAR ==================== */}
       <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.15)', background: '#0F291E', padding: '1.25rem 0', fontSize: '12.5px', color: 'rgba(255, 255, 255, 0.85)' }}>
@@ -525,7 +414,7 @@ export const Footer: React.FC = () => {
 
           {/* Copyright */}
           <div style={{ fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>
-            &copy; 2026 Westpoint Group Companies. All rights reserved.
+            &copy; 2026 Agro Foundries. All rights reserved.
           </div>
 
           {/* Legal Links + Scroll To Top */}

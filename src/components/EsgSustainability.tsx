@@ -45,7 +45,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
                 Recycled Steel Melting &amp; Sand Recovery
               </h3>
               <p style={{ color: '#15803D', fontSize: '14px', lineHeight: 1.55, marginBottom: '20px' }}>
-                Westpoint Group Companies utilizes electric induction melting fueled by 100% recycled structural scrap steel and closed-loop thermal sand reclamation to manufacture low-emission, ultra-durable rail turnout castings and drop forgings.
+                Agro Foundries utilizes electric induction melting fueled by 100% recycled structural scrap steel and closed-loop thermal sand reclamation to manufacture low-emission, ultra-durable rail turnout castings and drop forgings.
               </p>
 
               {/* 4 Feature Cards Grid */}
@@ -121,7 +121,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
           <div style={{ position: 'relative', height: '100%', minHeight: '340px', overflow: 'hidden', border: '1px solid #E5E7EB' }}>
             <img
               src="/images/rail_trackwork_mfg.png"
-              alt="Sustainable Westpoint metal casting facility"
+              alt="Sustainable Agro Foundries metal casting facility"
               style={{ width: '100%', height: '100%', minHeight: '340px', objectFit: 'cover', display: 'block' }}
             />
             {/* Gradient Overlay */}

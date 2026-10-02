@@ -4,34 +4,34 @@ import { ArrowRight } from 'lucide-react';
 export const ManufacturingCapabilities: React.FC = () => {
   const capabilities = [
     {
-      title: 'CASTING',
-      sub: 'Electric Induction & Solidification',
-      desc: 'High-capacity electric arc melting with MagmaSoft® 3D thermal solidification modeling for manganese steel and ductile iron.',
-      img: '/images/real_metal_casting_stock.jpg'
+      title: 'TRACTORS',
+      sub: 'Heavy Duty Power',
+      desc: 'Reliable and powerful tractors built to handle the toughest jobs on any American farm.',
+      img: '/images/red_tractor_magnum.jpg'
     },
     {
-      title: 'FORGING',
-      sub: 'Heavy Drop & Ring Rolling',
-      desc: 'Precision drop forging presses producing high-density grain structure carbon and alloy steel axles, wheelsets, and couplers.',
-      img: '/images/real_steel_gears_stock.jpg'
+      title: 'HARVESTERS',
+      sub: 'Crop Gathering',
+      desc: 'High-capacity combine harvesters designed to bring in your crops quickly and efficiently.',
+      img: '/images/red_combine_axialflow.jpg'
     },
     {
-      title: 'MACHINING',
-      sub: '5-Axis CNC Milling & Turning',
-      desc: 'Robotic 5-axis heavy CNC machining centers operating to 0.05mm tolerances for turnout frogs, axles, and bogie frames.',
-      img: '/images/real_cnc_machining_stock.jpg'
+      title: 'CROP SPRAYERS',
+      sub: 'Precision Application',
+      desc: 'High-clearance self-propelled sprayers built for maximum acreage and minimal drift.',
+      img: '/images/red_sprayer_patriot.jpg'
     },
     {
-      title: 'ASSEMBLY',
-      sub: 'Turnout & Wheelset Fitting',
-      desc: 'Full mechanical assembly of trackwork turnout sets, pantograph catenary arms, and automated rail coupling gear.',
-      img: '/images/real_rail_track_stock.jpg'
+      title: 'PLANTERS & SEEDERS',
+      sub: 'Soil Planting',
+      desc: 'Accurate planting equipment to ensure perfect seed placement and maximum yield.',
+      img: '/images/red_tractor_steiger.jpg'
     },
     {
-      title: 'TESTING',
-      sub: '100% Volumetric NDT & QA',
-      desc: 'Spectrometric chemical analysis, ultrasonic flaw detection, magnetic particle scanning, and sub-zero impact testing.',
-      img: '/images/real_train_wheelset_stock.jpg'
+      title: 'BALERS',
+      sub: 'Hay & Forage',
+      desc: 'Durable baling machines that tightly pack hay and forage for easy transport and storage.',
+      img: '/images/red_tractor_magnum.jpg'
     }
   ];
 
@@ -48,13 +48,13 @@ export const ManufacturingCapabilities: React.FC = () => {
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#4CAF50' }}>END-TO-END INDUSTRIAL PRODUCTION</span>
+              <span style={{ color: '#4CAF50' }}>HOW WE BUILD OUR EQUIPMENT</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: '0 0 0.5rem 0', textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
               MANUFACTURING CAPABILITIES
             </h2>
             <p style={{ fontSize: '14px', color: '#2E7D32', margin: 0, maxWidth: '580px', fontWeight: 500, fontFamily: "'Manrope', sans-serif !important" }}>
-              Integrated manufacturing from melting and forging to precision CNC machining and certified non-destructive testing.
+              From melting the raw iron to testing the finished product, we handle every step of the building process in-house to guarantee quality.
             </p>
           </div>
 

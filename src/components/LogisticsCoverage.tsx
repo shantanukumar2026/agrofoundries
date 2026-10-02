@@ -48,7 +48,7 @@ export const LogisticsCoverage: React.FC<LogisticsCoverageProps> = ({
           <div>
             <h3 style={{ fontSize: '20px', fontWeight: 800, color: '#FFFFFF', marginBottom: '12px' }}>Rail Component Freight & Dispatch Network</h3>
             <p style={{ color: '#ECFDF5', fontSize: '13.5px', lineHeight: 1.6, marginBottom: '20px', opacity: 0.9 }}>
-              Westpoint Group Companies operates an integrated network of specialized foundries, CNC machining facilities, and rail depot centers across North America with direct Class I rail siding access.
+              Agro Foundries operates an integrated network of specialized foundries, CNC machining facilities, and rail depot centers across North America with direct Class I rail siding access.
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' }}>

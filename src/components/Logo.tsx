@@ -4,46 +4,38 @@ type Props = {
   className?: string;
   style?: React.CSSProperties;
   variant?: 'light' | 'dark' | 'transparent';
-  division?: 'infrastructure' | 'water' | 'group';
+  division?: 'infrastructure' | 'water' | 'group' | string;
   height?: string | number;
 };
 
 export default function Logo({
   className = '',
   style,
-  division = 'group',
   height = '56px'
 }: Props) {
-  let logoSrc = '/logos/logo-white.png';
-  let altText = 'Westpoint Group Companies Logo';
-
-  if (division === 'infrastructure') {
-    logoSrc = '/logos/westpoint-infrastructure.png';
-    altText = 'Westpoint Infrastructure Logo';
-  } else if (division === 'water') {
-    logoSrc = '/logos/westpoint-water.png';
-    altText = 'Westpoint Water Logo';
-  }
-
   return (
     <a
       href="/"
       className={className}
+      aria-label="Agro Foundries Home"
       style={{
         display: 'inline-flex',
         alignItems: 'center',
         textDecoration: 'none',
+        height,
         ...style
       }}
     >
       <img
-        src={logoSrc}
-        alt={altText}
+        src="/AFlogo.png"
+        alt="Agro Foundries Logo"
         style={{
           height,
+          maxHeight: '100%',
           width: 'auto',
           objectFit: 'contain',
-          objectPosition: 'left center'
+          objectPosition: 'left center',
+          display: 'block'
         }}
       />
     </a>

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Landmark, TrainTrack, Building2, Globe2, ShieldCheck, Award, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Landmark, Building2, Globe2, ShieldCheck, Award, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const AuthoritiesApprovals: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -15,67 +15,64 @@ export const AuthoritiesApprovals: React.FC = () => {
   };
   const approvals = [
     {
-      category: 'RDSO APPROVED CLASS A FOUNDRY',
+      category: 'ASABE & ANSI STANDARDS',
       icon: Award,
-      desc: 'Research Designs and Standards Organisation certified Class A foundry.',
+      desc: 'American Society of Agricultural and Biological Engineers standards.',
       items: [
-        'RDSO Class A Foundry Accreditation for Steel & Ductile Iron',
-        'Approved Supplier for Rail Coach, Bogie Bolster & Bogie Frames',
-        'Critical Cast & Machined Railway Components Approval'
+        'ANSI / ASABE S572.1 Spray Droplet Spectrum Classification',
+        'ASABE S318 Safety for Agricultural Field Equipment',
+        'Standardized 3-Point Hitch Dimensions (ASABE S217)'
       ]
     },
     {
-      category: 'GOVERNMENT TRANSPORTATION BODIES',
+      category: 'FEMA & AEM INDUSTRY BODIES',
       icon: Landmark,
-      desc: 'Federal oversight & safety compliance accreditation.',
+      desc: 'North American farm machinery manufacturing associations.',
       items: [
-        'Federal Railroad Administration (FRA Rule 213)',
-        'Federal Transit Administration (FTA Certified)',
-        'U.S. Department of Transportation (USDOT Approved)'
+        'Farm Equipment Manufacturers Association (FEMA) Active Member',
+        'Association of Equipment Manufacturers (AEM) USA Standards',
+        'Equipment Security & Field Warranty Protection Protocol'
       ]
     },
     {
-      category: 'CLASS I FREIGHT RAILROADS',
+      category: 'USDA & EPA COMPLIANCE',
       icon: Building2,
-      desc: 'Direct supplier qualification for 36-ton heavy axle load freight.',
+      desc: 'Federal environmental & precision conservation standards.',
       items: [
-        'BNSF Railway Certified Component Manufacturer',
-        'Union Pacific Railroad Approved Foundry & Forge',
-        'CSX Transportation Qualified Trackwork Supplier',
-        'Norfolk Southern Siding Approved Castings'
+        'EPA Drift-Reduction Technology (DRT) Verified Nozzle Ratings',
+        'USDA NRCS Variable-Rate Precision Farming Guidelines',
+        'Clean Water Act Agricultural Chemical Containment Compliance'
       ]
     },
     {
-      category: 'URBAN TRANSIT AUTHORITIES',
-      icon: TrainTrack,
-      desc: 'Metro, monorail & high-speed passenger corridor approvals.',
-      items: [
-        'Amtrak High-Speed Corridor Approved',
-        'NYC Metropolitan Transportation Authority (MTA)',
-        'Regional Transit Authority (RTA) System Standard',
-        'Bay Area Rapid Transit (BART) Track Fastener Spec'
-      ]
-    },
-    {
-      category: 'GLOBAL RAILWAY ADMINISTRATIONS',
-      icon: Globe2,
-      desc: 'International heavy rail & transit authority qualifications.',
-      items: [
-        'Network Rail (United Kingdom) Prequalified',
-        'Deutsche Bahn (DB Germany) Standard Certified',
-        'Canadian National (CN Rail) Heavy Haul Approved',
-        'SNCF Mobility (France) Turnout Frog Supplier'
-      ]
-    },
-    {
-      category: 'metal QA ACCREDITATION',
+      category: 'OEM MACHINERY ALLIANCES',
       icon: ShieldCheck,
-      desc: 'Full quality management system & metallurgy audits.',
+      desc: 'Direct supplier qualification for North American tractor & implement builders.',
       items: [
-        'AAR M-1003 Quality Assurance Certified Facility',
-        'ISO 9001:2015 Manufacturing Traceability',
-        'IATF 16949 Heavy Equipment Drop Forging QA',
-        'AREMA Chapter 4 Trackwork Specification Compliance'
+        'Commercial Sprayer & Tillage OEM Approved Supplier',
+        'Precision Cast Ductile Iron Planetary & Axle Housings',
+        'Direct Foundry to Assembly Line Just-In-Time Logistics'
+      ]
+    },
+    {
+      category: 'ISO & GLOBAL PROTOCOLS',
+      icon: Globe2,
+      desc: 'International electronics & mechanical safety certifications.',
+      items: [
+        'ISO 11783 (ISOBUS) Tractor-Implement Electronic Protocol',
+        'ISO 4254-1 General Safety for Agricultural Machinery',
+        'ISO 9001:2015 Manufacturing Traceability Audited'
+      ]
+    },
+    {
+      category: 'METALLURGY QA AUDITING',
+      icon: ShieldCheck,
+      desc: 'Full chemical composition & mechanical strength certifications.',
+      items: [
+        'ASTM A536 Ductile Iron Specification Compliance (Grade 65-45-12)',
+        'ASTM A48 Class 35 Grey Iron Ballast Standards',
+        'ISO/IEC 17025 Accredited In-House Metallurgical Testing Lab',
+        '100% Heat Lot Chemical Spectrometer Certification'
       ]
     }
   ];
@@ -89,10 +86,10 @@ export const AuthoritiesApprovals: React.FC = () => {
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#1B5E20' }}>RDSO CLASS A FOUNDRY &amp; INSTITUTIONAL ACCREDITATION</span>
+              <span style={{ color: '#1B5E20' }}>ASABE, FEMA &amp; ISO INSTITUTIONAL ACCREDITATION</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-              AUTHORITIES &amp; ACCREDITATIONS
+              INDUSTRY ACCREDITATIONS &amp; APPROVALS
             </h2>
           </div>
 
@@ -227,16 +224,16 @@ export const AuthoritiesApprovals: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div>
               <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>FOUNDRY CLASSIFICATION</span>
-              <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>RDSO APPROVED CLASS 'A' FOUNDRY</strong>
+              <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>ASABE &amp; ASTM CERTIFIED FOUNDRY</strong>
             </div>
 
             <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '1.5rem' }}>
               <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>ULTRASONIC NDT PASS RATE</span>
-              <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>100.00% VOLUMETRIC SCAN</strong>
+              <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>100.00% VOLUMETRIC SCAN</strong>
             </div>
 
             <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '1.5rem' }}>
-              <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>AAR &amp; AREMA COMPLIANCE</span>
+              <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>ASABE &amp; FEMA COMPLIANCE</span>
               <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>FULL HEAT CODE CERTIFICATION</strong>
             </div>
           </div>

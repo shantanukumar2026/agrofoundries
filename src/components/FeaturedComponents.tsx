@@ -20,242 +20,203 @@ export const FeaturedComponents: React.FC<FeaturedComponentsProps> = ({ onOpenPr
   };
 
   const categories = [
-    { id: 'all', label: 'All Products' },
-    { id: 'rail', label: 'Rail Coach & Bogie' },
-    { id: 'agri', label: 'Agri Industry' },
-    { id: 'loco', label: 'Locomotives' },
-    { id: 'oem', label: 'OEMs' },
-    { id: 'mining', label: 'Mining Industries' },
-    { id: 'other', label: 'Other Industries' }
+    { id: 'all', label: 'All Equipment & Parts' },
+    { id: 'sprayers', label: 'Precision Sprayers' },
+    { id: 'castings', label: 'Agricultural Castings' },
+    { id: 'combine', label: 'Combine & Harvesting' },
+    { id: 'tillage', label: 'Tillage & Implements' },
+    { id: 'tractor', label: 'Tractor & Drivetrain' }
   ];
 
   const components = [
-    // Rail Coach & Bogie
+    // Precision Sprayers
     {
-      id: 'rail-01',
-      category: 'rail',
-      title: 'Control Arm Upper / Lower',
-      series: 'SG 400/18',
-      specs: 'DIN/EN/ISO Standards',
-      desc: 'Under-chassis critical components of high speed German LHB/FIAT coaches.',
-      img: '/images/trackside_turnout_castings.jpg',
+      id: 'spray-01',
+      category: 'sprayers',
+      title: 'High-Clearance Boom Sprayer',
+      series: 'AGRO-SPRAY 120',
+      specs: '120ft Boom • Pulse Width Mod',
+      desc: 'Precision high-clearance self-propelled crop sprayer with automatic boom height leveling and drift-control nozzles.',
+      img: '/images/red_sprayer_patriot.jpg',
     },
     {
-      id: 'rail-02',
-      category: 'rail',
-      title: 'Centering Disc Assembly',
-      series: 'GS-20Mn5V',
-      specs: 'DIN 17182',
-      desc: 'Centering disc assembly for all types of high-speed passenger coaches.',
-      img: '/images/amsted_centering_disc.jpg',
+      id: 'spray-02',
+      category: 'sprayers',
+      title: 'High-Capacity Axial Combine Harvester',
+      series: 'AGRO-HARVEST 9120',
+      specs: '523 HP • 350-Bushel Grain Tank',
+      desc: 'Commercial high-capacity single-rotor combine harvester engineered for gentle grain threshing and maximum field output.',
+      img: '/images/red_combine_axialflow.jpg',
     },
     {
-      id: 'rail-03',
-      category: 'rail',
-      title: 'Axlebox Housing',
-      series: 'IS 1030',
-      specs: 'Precision Machined',
-      desc: 'Axlebox housing for freight and passenger bogie bolsters.',
-      img: '/images/amsted_bogie_axlebox.jpg',
+      id: 'spray-03',
+      category: 'sprayers',
+      title: 'Heavy-Duty Articulated 4WD Tractor',
+      series: 'AGRO-STEIGER 485',
+      specs: '485 HP • Heavy Drawbar Capacity',
+      desc: 'High-power 4WD articulated tractor built for deep ripping, continuous tillage, and high-acreage field operations.',
+      img: '/images/red_tractor_steiger.jpg',
     },
     {
-      id: 'rail-04',
-      category: 'rail',
-      title: 'Railway Track Plates',
-      series: 'TRACKWORK',
-      specs: 'Heavy Duty',
-      desc: 'Precision cast steel track tie plates and turnout components.',
-      img: '/images/trackside_turnout_castings_2.jpg',
-    },
-
-    // Agri Industry
-    {
-      id: 'agri-01',
-      category: 'agri',
-      title: 'Rotavator Gearbox 13x23',
-      series: 'AGRI GEAR',
-      specs: 'Precision Cast',
-      desc: 'High durability rotavator gearbox casing for agricultural machinery.',
-      img: '/images/prod_rotavator_gearbox_13x23.jpg',
-    },
-    {
-      id: 'agri-02',
-      category: 'agri',
-      title: 'Reduction Gear Housing',
-      series: 'AGRI HOUSING',
-      specs: 'Heavy Duty Cast Iron',
-      desc: 'Reduction gear housing for tractors and combine harvesters.',
-      img: '/images/prod_rotavator_gearbox_13x23.jpg',
-    },
-    {
-      id: 'agri-03',
-      category: 'agri',
-      title: 'Brake Drums',
-      series: 'AGRI BRAKE',
-      specs: 'Ductile Iron',
-      desc: 'High-friction brake drums for agricultural trailers and tractors.',
-      img: '/images/locomotive_wheelset_stock.jpg',
-    },
-    {
-      id: 'agri-04',
-      category: 'agri',
-      title: 'Flywheels',
-      series: 'AGRI FLYWHEEL',
-      specs: 'Balanced Cast Iron',
-      desc: 'Precision balanced flywheels for high-torque agricultural engines.',
-      img: '/images/real_cnc_machining_stock.jpg',
+      id: 'spray-04',
+      category: 'sprayers',
+      title: 'Row-Crop High-Torque Tractor',
+      series: 'AGRO-MAGNUM 250',
+      specs: '250 HP • CVT Precision Drive',
+      desc: 'High-efficiency row-crop tractor providing maximum traction balance for heavy implements and planting rigs.',
+      img: '/images/red_tractor_magnum.jpg',
     },
 
-    // Locomotives
+    // Agricultural Castings (Casting Reference)
     {
-      id: 'loco-01',
-      category: 'loco',
-      title: 'Jacking Pad',
-      series: 'LOCO LIFT',
-      specs: 'Heavy Duty',
-      desc: 'Jacking pad for diesel-electric locomotives.',
+      id: 'cast-01',
+      category: 'castings',
+      title: 'Heavy Duty Cambridge Roller Ring',
+      series: 'CRES-RING 500',
+      specs: 'Ductile Iron ASTM A536',
+      desc: 'Robust breaker and Cambridge packer rings for soil consolidation, moisture retention, and seedbed preparation.',
+      img: '/images/prod_centering_disc.jpg',
+    },
+    {
+      id: 'cast-02',
+      category: 'castings',
+      title: 'Tractor Lower Link Housing',
+      series: 'HITCH-LINK 3P',
+      specs: 'Grade 65-45-12 Ductile',
+      desc: 'High-tensile 3-point hitch link housing and pivot brackets manufactured to withstand extreme tractive loads.',
+      img: '/images/prod_pin_bracket.jpg',
+    },
+    {
+      id: 'cast-03',
+      category: 'castings',
+      title: 'Tractor Front Counterweights',
+      series: 'BALLAST-PRO',
+      specs: 'Grey Iron ASTM A48 Class 35',
+      desc: 'Interlocking suitcase counterweights and wheel ballast weights providing optimal traction balance in wet soils.',
       img: '/images/amsted_jacking_pad.jpg',
     },
     {
-      id: 'loco-02',
-      category: 'loco',
-      title: 'Brake Head Assembly',
-      series: 'LOCO BRAKE',
-      specs: 'Ductile Iron',
-      desc: 'Brake head for locomotive brake rigging kit.',
-      img: '/images/amsted_brake_head.jpg',
-    },
-    {
-      id: 'loco-03',
-      category: 'loco',
-      title: 'Bearing Adaptor Plate',
-      series: 'LOCO ADAPT',
-      specs: 'Precision Cast',
-      desc: 'Bearing adaptor plate assembly for locomotive bogies.',
-      img: '/images/real_train_wheelset_stock.jpg',
-    },
-    {
-      id: 'loco-04',
-      category: 'loco',
-      title: 'Coupler Carrier',
-      series: 'LOCO COUPLER',
-      specs: 'High Tensile Steel',
-      desc: 'Coupler carrier support for heavy haul locomotives.',
-      img: '/images/prod_pin_bracket.jpg',
+      id: 'cast-04',
+      category: 'castings',
+      title: 'Planetary Carrier Housing',
+      series: 'DRIVE-CAST',
+      specs: 'CNC Machined Ductile Iron',
+      desc: 'Precision-machined final drive planetary gear carriers for high-horsepower tractors and harvesters.',
+      img: '/images/prod_overspeed_trip_casting.jpg',
     },
 
-    // OEMs
+    // Combine & Harvesting Upgrades (Parts Reference)
     {
-      id: 'oem-01',
-      category: 'oem',
-      title: '10 Ton Stub Axle',
-      series: 'OEM AXLE',
-      specs: 'Forged Steel',
-      desc: 'Heavy duty 10 Ton stub axle for OEM applications.',
+      id: 'comb-01',
+      category: 'combine',
+      title: 'Progressive Discharge Beater',
+      series: 'HARVEST-PRO 80',
+      specs: 'Dynamic Balanced Steel',
+      desc: 'Progressive discharge beater designed for smooth grain flow, reduced rotor loss, and higher threshing capacity.',
+      img: '/images/prod_rotavator_gearbox_13x23.jpg',
+    },
+    {
+      id: 'comb-02',
+      category: 'combine',
+      title: 'Square Bar Concave - Corn & Beans',
+      series: 'CONCAVE-SB 8010',
+      specs: 'Abrasion Resistant Steel',
+      desc: 'High-throughput square bar concaves providing cleaner grain samples and maximum crop separation in high-moisture harvests.',
+      img: '/images/prod_railway_track_plates.jpg',
+    },
+    {
+      id: 'comb-03',
+      category: 'combine',
+      title: 'Feeder Chain with Poly Flights',
+      series: 'FEED-CHAIN PF',
+      specs: 'Heavy-Duty Roller Links',
+      desc: 'Quiet-running poly flight feeder chains designed for reduced rock damage and positive header intake.',
+      img: '/images/prod_sprockets.jpg',
+    },
+    {
+      id: 'comb-04',
+      category: 'combine',
+      title: 'High-Capacity Kile Rotor Flights',
+      series: 'ROTOR-KILE',
+      specs: 'Wear-Resistant Alloy',
+      desc: 'Engineered rotor inlet flighting ensuring continuous transition into the threshing chamber with minimal grain cracking.',
+      img: '/images/prod_brake_head.jpg',
+    },
+
+    // Tillage & Implements
+    {
+      id: 'till-01',
+      category: 'tillage',
+      title: 'Rotavator Gearbox 13x23',
+      series: 'AGRI GEAR 13x23',
+      specs: 'Precision Cast Ductile Iron',
+      desc: 'Heavy-duty multi-speed rotavator gearbox engineered for deep seedbed cultivation and high-torque soil churning.',
+      img: '/images/prod_rotavator_gearbox_13x23.jpg',
+    },
+    {
+      id: 'till-02',
+      category: 'tillage',
+      title: 'Secondary Reduction Gearbox 13x25',
+      series: 'AGRI GEAR 13x25',
+      specs: 'Hardened Helical Gears',
+      desc: 'Severe-duty rotary tiller transmission case with dual oil seals and high shock resistance for rocky terrains.',
+      img: '/images/amsted_rotavator_gearbox.jpg',
+    },
+    {
+      id: 'till-03',
+      category: 'tillage',
+      title: 'Notched Tillage Disc Blades',
+      series: 'DISC-HEAVY 26',
+      specs: 'Boron Steel 50-52 HRC',
+      desc: 'Heat-treated concaved disc harrow blades providing superior residue cutting and soil aeration across stubble.',
+      img: '/images/prod_centering_disc.jpg',
+    },
+    {
+      id: 'till-04',
+      category: 'tillage',
+      title: 'Planter Heavy-Duty Hub & Spindle',
+      series: 'SEED-HUB HD',
+      specs: 'Triple Lip Sealed Bearing',
+      desc: 'Zero-maintenance planter gauge wheel hubs designed to resist abrasive dust, fertilizer salts, and slurry ingress.',
+      img: '/images/amsted_bogie_axlebox.jpg',
+    },
+
+    // Tractor & Drivetrain
+    {
+      id: 'trac-01',
+      category: 'tractor',
+      title: 'Agricultural Differential Housing',
+      series: 'DIFF-CASE 4WD',
+      specs: 'Machined Ductile Iron',
+      desc: 'Stout differential cases and axle carrier assemblies engineered for heavy mechanical front wheel drive (MFWD) tractors.',
+      img: '/images/amsted_bogie_axlebox.jpg',
+    },
+    {
+      id: 'trac-02',
+      category: 'tractor',
+      title: 'Heavy-Duty Brake Drums',
+      series: 'AGRI BRAKE HD',
+      specs: 'High-Carbon Grey Iron',
+      desc: 'Fade-resistant agricultural brake drums with integrated cooling fins for grain haulers, manure tankers, and heavy trailers.',
       img: '/images/locomotive_wheelset_stock.jpg',
     },
     {
-      id: 'oem-02',
-      category: 'oem',
-      title: 'Eliptcal Pin',
-      series: 'OEM PIN',
-      specs: 'Hardened Steel',
-      desc: 'Precision engineered eliptcal pins for industrial machinery.',
+      id: 'trac-03',
+      category: 'tractor',
+      title: 'Engine Balanced Flywheels',
+      series: 'FLYWHEEL D-12',
+      specs: 'Dynamically Balanced ISO G2.5',
+      desc: 'Precision cast and CNC-turned engine flywheels for diesel agricultural power units and irrigation pumps.',
+      img: '/images/real_cnc_machining_stock.jpg',
+    },
+    {
+      id: 'trac-04',
+      category: 'tractor',
+      title: 'PTO Driveline Drive Hubs & Yokes',
+      series: 'PTO-YOKE 1000',
+      specs: 'Forged Alloy Steel',
+      desc: 'Splined PTO driveline output yokes and slip clutch adapters with safety shielding to power silage choppers and balers.',
       img: '/images/prod_pin_bracket.jpg',
-    },
-    {
-      id: 'oem-03',
-      category: 'oem',
-      title: 'Sprockets for Undercarriage',
-      series: 'OEM SPROCKET',
-      specs: 'Wear Resistant',
-      desc: 'Heavy duty sprockets for tracked undercarriage systems.',
-      img: '/images/gettyimages-157479520-1024x1024.jpg',
-    },
-    {
-      id: 'oem-04',
-      category: 'oem',
-      title: 'Trailer Components',
-      series: 'OEM TRAILER',
-      specs: 'High Capacity',
-      desc: 'Various structural components for heavy haul trailers.',
-      img: '/images/istockphoto-1967717882-1024x1024.jpg',
-    },
-
-    // Mining Industries
-    {
-      id: 'mine-01',
-      category: 'mining',
-      title: 'Mining Winches',
-      series: 'MINE WINCH',
-      specs: 'High Torque',
-      desc: 'Heavy duty winches for underground and surface mining operations.',
-      img: '/images/istockphoto-1030443074-1024x1024.jpg',
-    },
-    {
-      id: 'mine-02',
-      category: 'mining',
-      title: 'Aeriel Ropeway Pulleys',
-      series: 'MINE PULLEY',
-      specs: 'Wear Resistant',
-      desc: 'Heavy flanged pulleys for aerial ropeway material transport.',
-      img: '/images/real_metal_casting_stock.jpg',
-    },
-    {
-      id: 'mine-03',
-      category: 'mining',
-      title: 'Mining Gearboxes',
-      series: 'MINE GEARBOX',
-      specs: 'High Impact',
-      desc: 'Reduction gearboxes for severe duty mining conveyors.',
-      img: '/images/real_metal_casting_stock.jpg',
-    },
-    {
-      id: 'mine-04',
-      category: 'mining',
-      title: 'Roof Bolter Components',
-      series: 'MINE BOLTER',
-      specs: 'Abrasion Resistant',
-      desc: 'Components for underground mining roof bolter machinery.',
-      img: '/images/istockphoto-1030443074-1024x1024.jpg',
-    },
-
-    // Other Industries
-    {
-      id: 'other-01',
-      category: 'other',
-      title: 'EN8 & EN9 Carbon Steel Castings',
-      series: 'EN CASTINGS',
-      specs: 'High Tensile',
-      desc: 'Engineering carbon steel castings for heavy machinery.',
-      img: '/images/trackside_turnout_castings.jpg',
-    },
-    {
-      id: 'other-02',
-      category: 'other',
-      title: 'High Chrome Castings',
-      series: 'CHROME IRON',
-      specs: 'Abrasion Resistant',
-      desc: 'High chrome abrasion-resistant liners and wear parts.',
-      img: '/images/real_cnc_machining_stock.jpg',
-    },
-    {
-      id: 'other-03',
-      category: 'other',
-      title: 'Stone Crusher Castings',
-      series: 'CRUSHER',
-      specs: 'Manganese Steel',
-      desc: 'Castings for stone crushers including jaw plates and mantles.',
-      img: '/images/real_cnc_machining_stock.jpg',
-    },
-    {
-      id: 'other-04',
-      category: 'other',
-      title: 'Heat Resistant Castings for Boilers',
-      series: 'BOILER CAST',
-      specs: 'Heat Resistant',
-      desc: 'Boiler grates and heat-resistant components for thermal plants.',
-      img: '/images/real_metal_casting_stock.jpg',
     }
   ];
 
@@ -273,10 +234,10 @@ export const FeaturedComponents: React.FC<FeaturedComponentsProps> = ({ onOpenPr
             <div>
               <div className="eyebrow">
                 <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-                <span>RDSO, AREMA &amp; AAR M-1003 CERTIFIED CATALOG</span>
+                <span>ASABE, ISO 9001 &amp; ASTM A536 CERTIFIED CATALOG</span>
               </div>
               <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3rem)', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
-                FEATURED WAGONS, BOGIES &amp; STEEL CASTINGS
+                FEATURED AGRICULTURAL MACHINERY &amp; CASTINGS
               </h2>
             </div>
 
@@ -351,38 +312,6 @@ export const FeaturedComponents: React.FC<FeaturedComponentsProps> = ({ onOpenPr
             </div>
           </div>
 
-          {/* Interactive Category Filter Tabs */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginRight: '8px', color: '#1B5E20', fontWeight: 800, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.06em', fontFamily: "'Manrope', sans-serif !important" }}>
-              <Filter size={14} color="#4CAF50" />
-              <span>CATEGORY FILTER:</span>
-            </div>
-            {categories.map((cat) => {
-              const isActive = activeCategory === cat.id;
-              return (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
-                  style={{
-                    background: isActive ? '#1B5E20' : '#FFFFFF',
-                    color: isActive ? '#FAF6EE' : '#2E7D32',
-                    border: isActive ? '1px solid #4CAF50' : '1px solid #D1D5DB',
-                    fontSize: '11px',
-                    fontWeight: 800,
-                    padding: '6px 14px',
-                    borderRadius: '2px',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s ease',
-                    letterSpacing: '0.04em',
-                    fontFamily: "'Manrope', sans-serif !important"
-                  }}
-                >
-                  {cat.label}
-                </button>
-              );
-            })}
-          </div>
-
           {/* Full Card Horizontal Slider (4 visible across 100% container width) */}
           <div
             ref={scrollRef}
@@ -442,7 +371,7 @@ export const FeaturedComponents: React.FC<FeaturedComponentsProps> = ({ onOpenPr
                   <div style={{ paddingTop: '0.85rem', marginTop: '0.85rem', borderTop: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <Check size={13} color="#4CAF50" />
-                      <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>WESTPOINT QUALITY CERTIFIED</span>
+                      <span style={{ fontSize: '10.5px', fontWeight: 800, color: '#1B5E20', letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>Agro Foundries QUALITY CERTIFIED</span>
                     </div>
 
                     <span style={{

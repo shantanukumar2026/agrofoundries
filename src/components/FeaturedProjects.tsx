@@ -33,7 +33,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
           </div>
           <div>
             <p style={{ color: '#2E7D32', fontSize: '13.5px', lineHeight: 1.5, margin: 0, maxWidth: '500px' }}>
-              Every rail component supplied by Westpoint Group Companies represents an engineering commitment to heavy-haul durability. Explore our landmark turnout frog installations, transit line upgrades, and forged axle wheelsets.
+              Every rail component supplied by Agro Foundries represents an engineering commitment to heavy-haul durability. Explore our landmark turnout frog installations, transit line upgrades, and forged axle wheelsets.
             </p>
           </div>
         </div>

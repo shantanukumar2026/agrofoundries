@@ -8,28 +8,28 @@ export const SolidificationCalculator: React.FC = () => {
 
   const alloyData = {
     manganese: {
-      name: 'Austenitic Manganese Steel (AREMA Ch. 4)',
-      yieldStrength: '680 - 750 MPa',
-      hardness: '220 - 550 BHN (Work-Hardened)',
-      fractureToughness: '120 J/cm² @ -40°C',
-      porosityRisk: '0.00% (MagmaSoft® Modeled)',
-      desc: 'Formulated with 11-14% manganese for extreme impact work-hardening in turnout frog crossovers.'
-    },
-    ductile: {
       name: 'SG Ductile Iron (ASTM A536 80-55-06)',
       yieldStrength: '550 - 620 MPa',
-      hardness: '180 - 245 BHN',
-      fractureToughness: '95 J/cm² @ -20°C',
+      hardness: '200 - 260 BHN',
+      fractureToughness: '115 J/cm² @ -20°C',
+      porosityRisk: '0.00% (MagmaSoft® Modeled)',
+      desc: 'Formulated with spheroidal graphite nodules for extreme torsional strength in rotavator gearboxes and 3-point link arms.'
+    },
+    ductile: {
+      name: 'Heavy Grey Iron (ASTM A48 Class 35)',
+      yieldStrength: '240 - 290 MPa',
+      hardness: '180 - 240 BHN',
+      fractureToughness: '85 J/cm²',
       porosityRisk: '0.01% (Thermal Sand Coated)',
-      desc: 'High spheroidal graphite density delivering superior vibration damping for locomotive brake heads.'
+      desc: 'High carbon flake matrix delivering massive deadweight and superior vibration damping for tractor counterweight ballast.'
     },
     forged: {
-      name: 'Forged Alloy Steel (AAR M-101 Grade F)',
-      yieldStrength: '850 - 980 MPa',
-      hardness: '280 - 340 BHN',
-      fractureToughness: '145 J/cm² @ -50°C',
-      porosityRisk: '0.00% (36-Ton Hydraulic Press)',
-      desc: 'Vacuum degassed carbon steel forged with continuous grain flow for heavy freight axles.'
+      name: 'Boron Implement Alloy (AISI 15B35 Quenched)',
+      yieldStrength: '890 - 1050 MPa',
+      hardness: '48 - 52 HRC (Through-Hardened)',
+      fractureToughness: '140 J/cm² @ -40°C',
+      porosityRisk: '0.00% (Hot Forged & Oil Quenched)',
+      desc: 'High-wear boron alloy steel engineered for extreme abrasion resistance in tillage discs and combine discharge beaters.'
     }
   };
 
@@ -46,10 +46,10 @@ export const SolidificationCalculator: React.FC = () => {
           <div>
             <div className="eyebrow eyebrow-dark">
               <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#81C784' }} />
-              <span style={{ color: '#A5D6A7', fontWeight: 900 }}>INTERACTIVE metal ENGINE</span>
+              <span style={{ color: '#A5D6A7', fontWeight: 900 }}>INTERACTIVE AGRICULTURAL METALLURGY ENGINE</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FFFFFF', margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-              THERMAL SOLIDIFICATION &amp; TOLERANCE CALCULATOR
+              THERMAL SOLIDIFICATION &amp; IMPLEMENT ALLOY CALCULATOR
             </h2>
           </div>
 

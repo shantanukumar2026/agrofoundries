@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, CheckCircle, ShieldCheck, Zap, TrainTrack, ChevronLeft, ChevronRight, Play, Pause, Layers } from 'lucide-react';
+import { ArrowRight, CheckCircle, ShieldCheck, Zap, Sprout, ChevronLeft, ChevronRight, Play, Pause, Layers } from 'lucide-react';
 import gsap from 'gsap';
 
 interface HeroSectionProps {
-  onExploreClick?: () => void;
   onRequestQuoteClick?: () => void;
   onWatchVideoClick?: () => void;
 }
@@ -11,39 +10,39 @@ interface HeroSectionProps {
 const slidesData = [
   {
     id: 1,
-    tag: '01 FOUNDRIES & TRANSIT',
-    eyebrow: 'Heavy-Duty Rail Manufacturing',
-    headline: 'Our Foundries keeping the rails going......',
-    mediaType: 'video',
-    mediaSrc: '/videos/20191217_Snippet_01_16by9.mp4',
+    tag: '01 SPRAYERS',
+    eyebrow: 'Crop Protection',
+    headline: 'ADVANCED CROP SPRAYERS',
+    mediaType: 'image',
+    mediaSrc: '/images/red_sprayer_patriot.jpg',
   },
   {
     id: 2,
-    tag: '02 TRANSIT INNOVATION',
-    eyebrow: 'Next-Generation Rail Technology',
-    headline: 'Railing into the future....',
-    mediaType: 'video',
-    mediaSrc: '/videos/20191217_Snippet_01_16by9.mp4',
+    tag: '02 CASTINGS',
+    eyebrow: 'Implement Parts',
+    headline: 'HEAVY-DUTY FARM CASTINGS',
+    mediaType: 'image',
+    mediaSrc: '/images/red_tractor_steiger.jpg',
   },
   {
     id: 3,
-    tag: '03 METALLURGICAL ALLIANCES',
-    eyebrow: 'Westpoint Global Network',
-    headline: 'Foundry associations n engineering on Westpoint',
-    mediaType: 'video',
-    mediaSrc: '/videos/20191217_Snippet_01_16by9.mp4',
+    tag: '03 UPGRADES',
+    eyebrow: 'Harvest Solutions',
+    headline: 'PRECISION COMBINE UPGRADES',
+    mediaType: 'image',
+    mediaSrc: '/images/red_combine_axialflow.jpg',
   },
   {
     id: 4,
-    tag: '04 CONTINUOUS MOBILITY',
-    eyebrow: 'Non-Stop Infrastructure',
-    headline: 'Making you on the move non stop......courtesy Westpoint',
-    mediaType: 'video',
-    mediaSrc: '/videos/20191217_Snippet_01_16by9.mp4',
+    tag: '04 RELIABILITY',
+    eyebrow: 'Field Proven',
+    headline: 'POWERING AMERICAN FARMS',
+    mediaType: 'image',
+    mediaSrc: '/images/red_tractor_magnum.jpg',
   }
 ];
 
-export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequestQuoteClick }) => {
+export const HeroSection: React.FC<HeroSectionProps> = ({ onRequestQuoteClick }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const textRef = useRef<HTMLDivElement>(null);
@@ -91,22 +90,32 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
         color: '#FFFFFF'
       }}
     >
-      {/* Background Media - Consistent continuous video across all slides */}
+      {/* Background Media - High-definition agricultural imagery and video */}
       <div ref={bgRef} style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-        <video
-          src="/videos/20191217_Snippet_01_16by9.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-        />
+        {slide.mediaType === 'video' ? (
+          <video
+            key={slide.mediaSrc}
+            src={slide.mediaSrc}
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        ) : (
+          <img
+            key={slide.mediaSrc}
+            src={slide.mediaSrc}
+            alt={slide.headline}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        )}
         {/* Dark Overlay for Text Readability */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.35) 100%)'
+            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.4) 100%)'
           }}
         />
       </div>
@@ -114,7 +123,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
       <div className="container-custom" style={{ position: 'relative', zIndex: 10, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', paddingTop: '4.5rem', paddingBottom: '2.5rem' }}>
         <div ref={textRef} style={{ maxWidth: '850px', textAlign: 'left', marginLeft: '3%' }}>
 
-          {/* Westpoint Foundry & Engineering Pill Badge */}
+          {/* Agro Foundries Technology Pill Badge */}
           <div style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -142,7 +151,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
               color: '#E8F5E9',
               fontFamily: "'Manrope', sans-serif !important"
             }}>
-              Foundry Associations &amp; Engineering on Westpoint
+              Precision Agricultural Technology &amp; Farm Machinery USA
             </span>
           </div>
 
@@ -203,15 +212,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
             <span
               style={{
                 fontFamily: "'Manrope', sans-serif !important",
-                fontSize: 'clamp(0.95rem, 1.8vw, 1.15rem)',
+                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
                 fontWeight: 800,
                 fontStyle: 'italic',
                 color: '#FFF9C4',
-                letterSpacing: '0.02em',
+                letterSpacing: '0.03em',
                 textShadow: '0 2px 8px rgba(0,0,0,0.5)'
               }}
             >
-              Making you on the move non stop......courtesy Westpoint
+              Growing America Greeeeen....
             </span>
             <span style={{
               color: '#FFD54F',
@@ -227,33 +236,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
 
           {/* Action Buttons */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '1rem', flexWrap: 'wrap', marginBottom: '3.5rem' }}>
-            <button
-              onClick={onExploreClick}
-              style={{
-                padding: '16px 32px',
-                fontSize: '13px',
-                fontWeight: 800,
-                letterSpacing: '0.1em',
-                textTransform: 'uppercase',
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '10px',
-                borderRadius: '4px',
-                fontFamily: "'Manrope', sans-serif !important",
-                background: '#4CAF50',
-                color: '#ffffff',
-                border: 'none',
-                boxShadow: '0 4px 15px rgba(76, 175, 80, 0.3)',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(76, 175, 80, 0.4)'; }}
-              onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 15px rgba(76, 175, 80, 0.3)'; }}
-            >
-              <Layers size={18} />
-              <span>EXPLORE PRODUCTS</span>
-              <ArrowRight size={16} />
-            </button>
 
             <button
               onClick={onRequestQuoteClick}
@@ -394,11 +376,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
               <div style={{ background: 'rgba(76, 175, 80, 0.2)', padding: '10px', borderRadius: '50%' }}>
-                <TrainTrack size={22} color="#81C784" />
+                <Sprout size={22} color="#81C784" />
               </div>
               <div>
-                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>WESTPOINT FOUNDRY ASSOCIATIONS</strong>
-                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Associations &amp; Heavy Rail Engineering</span>
+                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>AGRO FOUNDRIES CERTIFIED</strong>
+                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Precision Engineering &amp; Field Support</span>
               </div>
             </div>
 
@@ -407,8 +389,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                 <ShieldCheck size={22} color="#81C784" />
               </div>
               <div>
-                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>36-TON CAPACITY</strong>
-                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Built for heavy freight loads</span>
+                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>HIGH-ACREAGE CAPACITY</strong>
+                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Built for tough acreage &amp; extreme soils</span>
               </div>
             </div>
 
@@ -417,8 +399,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                 <Zap size={22} color="#81C784" />
               </div>
               <div>
-                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>HIGH PRECISION</strong>
-                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Made with robotic machining</span>
+                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>PRECISION ATOMIZATION</strong>
+                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Ultra-fine atomization &amp; drift control</span>
               </div>
             </div>
 
@@ -427,8 +409,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onRequ
                 <CheckCircle size={22} color="#81C784" />
               </div>
               <div>
-                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>100% QUALITY TESTED</strong>
-                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Scanned for any flaws</span>
+                <strong style={{ fontSize: '12px', fontWeight: 900, color: '#FFFFFF', display: 'block', letterSpacing: '0.05em', fontFamily: "'Manrope', sans-serif !important" }}>100% FIELD TESTED</strong>
+                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: "'Manrope', sans-serif !important", fontWeight: 600 }}>Calibrated for zero downtime</span>
               </div>
             </div>
 

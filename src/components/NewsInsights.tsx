@@ -4,25 +4,25 @@ import { ArrowRight } from 'lucide-react';
 export const NewsInsights: React.FC = () => {
   const news = [
     {
-      category: 'MANUFACTURING',
-      date: 'TECHNICAL BULLETIN',
-      title: 'Expanding Our Production Capacity in Central Foundry Facility',
-      desc: 'Westpoint Group Companies completes installation of second electric induction melting furnace and automated sand reclamation line.',
-      img: '/images/real_metal_casting_stock.jpg'
+      category: 'FIELD TECHNOLOGY',
+      date: 'PRECISION BULLETIN',
+      title: 'Next-Generation Pulse Width Modulation for Crop Sprayers',
+      desc: 'Agro Foundries introduces intelligent individual nozzle shutoff and variable rate liquid application controllers for reduced chemical waste and maximum yield.',
+      img: '/images/red_sprayer_patriot.jpg'
     },
     {
-      category: 'TECHNOLOGY',
+      category: 'METALLURGY',
       date: 'MANUFACTURING INSIGHT',
-      title: 'Investing in Next-Gen Machining Technology',
-      desc: 'Commissioning robotic 5-axis heavy CNC turning centers engineered to meet 0.05mm tolerances for high-speed rail frog crossovers.',
-      img: '/images/real_cnc_machining_stock.jpg'
+      title: 'Advancing Ductile Iron Durability in Rotavator Gearboxes',
+      desc: 'Implementation of MagmaSoft® 3D thermal simulation and robotic CNC machining centers operating to 0.02mm tolerances for heavy agricultural implements.',
+      img: '/images/usa_industrial_machining.jpg'
     },
     {
-      category: 'INFRASTRUCTURE',
+      category: 'EXPANSION',
       date: 'PRESS DISPATCH',
-      title: 'Delivering Reliable Solutions for a Changing World',
-      desc: 'Awarded multi-year contract for Class I freight turnout frog replacements and AAR M-201 Grade E couplers across North America.',
-      img: '/images/real_train_wheelset_stock.jpg'
+      title: 'Expanding Agricultural Dealer Network Across the US Midwest',
+      desc: 'Announcing 25 new regional distribution partnerships across Iowa, Illinois, and Nebraska providing guaranteed same-day farm machinery parts dispatch.',
+      img: '/images/red_combine_axialflow.jpg'
     }
   ];
 
@@ -35,7 +35,7 @@ export const NewsInsights: React.FC = () => {
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '28px', height: '2.5px', background: '#4CAF50' }} />
-              <span style={{ color: '#4CAF50' }}>INDUSTRY &amp; GRIEVANCE UPDATES</span>
+              <span style={{ color: '#4CAF50' }}>INDUSTRY DISPATCHES &amp; FIELD INNOVATIONS</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               NEWS &amp; INSIGHTS
