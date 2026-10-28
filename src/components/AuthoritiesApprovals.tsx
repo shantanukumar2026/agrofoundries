@@ -15,13 +15,13 @@ export const AuthoritiesApprovals: React.FC = () => {
   };
   const approvals = [
     {
-      category: 'ASABE & ANSI STANDARDS',
+      category: 'AGRICULTURAL MACHINERY STANDARDS',
       icon: Award,
       desc: 'American Society of Agricultural and Biological Engineers standards.',
       items: [
-        'ANSI / ASABE S572.1 Spray Droplet Spectrum Classification',
-        'ASABE S318 Safety for Agricultural Field Equipment',
-        'Standardized 3-Point Hitch Dimensions (ASABE S217)'
+        'Spray Droplet Spectrum & Drift Reduction',
+        'Safety for Agricultural Field Equipment',
+        'Standardized 3-Point Hitch Dimensions'
       ]
     },
     {
@@ -55,13 +55,13 @@ export const AuthoritiesApprovals: React.FC = () => {
       ]
     },
     {
-      category: 'ISO & GLOBAL PROTOCOLS',
+      category: 'GLOBAL MANUFACTURING STANDARDS',
       icon: Globe2,
       desc: 'International electronics & mechanical safety certifications.',
       items: [
-        'ISO 11783 (ISOBUS) Tractor-Implement Electronic Protocol',
-        'ISO 4254-1 General Safety for Agricultural Machinery',
-        'ISO 9001:2015 Manufacturing Traceability Audited'
+        'Tractor-Implement Electronic Protocol',
+        'General Safety for Agricultural Machinery',
+        'Manufacturing Traceability Audited'
       ]
     },
     {
@@ -71,7 +71,7 @@ export const AuthoritiesApprovals: React.FC = () => {
       items: [
         'ASTM A536 Ductile Iron Specification Compliance (Grade 65-45-12)',
         'ASTM A48 Class 35 Grey Iron Ballast Standards',
-        'ISO/IEC 17025 Accredited In-House Metallurgical Testing Lab',
+        'In-House Metallurgical Testing Lab',
         '100% Heat Lot Chemical Spectrometer Certification'
       ]
     }
@@ -86,7 +86,7 @@ export const AuthoritiesApprovals: React.FC = () => {
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#1B5E20' }}>ASABE, FEMA &amp; ISO INSTITUTIONAL ACCREDITATION</span>
+              <span style={{ color: '#1B5E20' }}>FEMA &amp; INDUSTRY QUALITY STANDARDS</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               INDUSTRY ACCREDITATIONS &amp; APPROVALS
@@ -224,7 +224,7 @@ export const AuthoritiesApprovals: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div>
               <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>FOUNDRY CLASSIFICATION</span>
-              <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>ASABE &amp; ASTM CERTIFIED FOUNDRY</strong>
+              <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>PRECISION CERTIFIED FOUNDRY</strong>
             </div>
 
             <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '1.5rem' }}>
@@ -233,7 +233,7 @@ export const AuthoritiesApprovals: React.FC = () => {
             </div>
 
             <div style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '1.5rem' }}>
-              <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>ASABE &amp; FEMA COMPLIANCE</span>
+              <span style={{ fontSize: '10px', color: '#A5D6A7', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', fontFamily: "'Manrope', sans-serif !important" }}>COMMERCIAL FARM EQUIPMENT COMPLIANCE</span>
               <strong style={{ fontSize: '14px', color: '#FFFFFF', fontWeight: 800, fontFamily: "'Manrope', sans-serif !important" }}>FULL HEAT CODE CERTIFICATION</strong>
             </div>
           </div>

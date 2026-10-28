@@ -1,7 +1,11 @@
 import React from 'react';
-import { ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Play } from 'lucide-react';
 
-export const CompanyIntro: React.FC = () => {
+interface CompanyIntroProps {
+  onWatchVideoClick?: () => void;
+}
+
+export const CompanyIntro: React.FC<CompanyIntroProps> = ({ onWatchVideoClick }) => {
   return (
     <section id="company-overview" className="section-full-vh" style={{ background: '#F8F9FA', borderBottom: '1px solid #E5E7EB', position: 'relative', overflow: 'hidden' }}>
       {/* Blueprint Grid Pattern Overlay */}
@@ -50,7 +54,7 @@ export const CompanyIntro: React.FC = () => {
               <div className="grid-responsive-2" style={{ gap: '0.85rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
-                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>ISO &amp; ASABE Standards Compliance</span>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: '#1B5E20', fontFamily: "'Manrope', sans-serif !important" }}>Rigorous Quality Inspection</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={15} color="#4CAF50" />
@@ -82,16 +86,58 @@ export const CompanyIntro: React.FC = () => {
 
               {/* Badge overlay */}
               <div style={{ position: 'absolute', top: '14px', right: '14px', zIndex: 20, background: '#1B5E20', color: '#FFFFFF', fontSize: '9.5px', fontWeight: 900, padding: '4px 10px', border: '1px solid #4CAF50', letterSpacing: '0.1em', fontFamily: "'Manrope', sans-serif !important" }}>
-                ASABE &bull; ISO 9001
+                FIELD TESTED &bull; HEAVY DUTY
               </div>
 
-              {/* Dynamic Image */}
+              {/* Dynamic Image with Video Tour Prompt */}
               <div style={{ height: '440px', overflow: 'hidden', position: 'relative', background: '#F8F9FA' }}>
                 <img
                   src="/images/red_sprayer_patriot.jpg"
                   alt="AGRO FOUNDRIES RED USA PATRIOT CROP SPRAYER & CASTINGS"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
+                <button
+                  onClick={() => {
+                    if (onWatchVideoClick) {
+                      onWatchVideoClick();
+                    } else {
+                      const el = document.getElementById('digital-tour');
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  style={{
+                    position: 'absolute',
+                    bottom: '16px',
+                    left: '16px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    padding: '8px 14px',
+                    borderRadius: '999px',
+                    background: 'rgba(15, 51, 20, 0.88)',
+                    backdropFilter: 'blur(8px)',
+                    border: '1px solid #69F0AE',
+                    color: '#FFFFFF',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    boxShadow: '0 4px 14px rgba(0,0,0,0.4)',
+                    transition: 'all 0.2s ease',
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.background = '#4CAF50';
+                    e.currentTarget.style.transform = 'scale(1.03)';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = 'rgba(15, 51, 20, 0.88)';
+                    e.currentTarget.style.transform = 'scale(1)';
+                  }}
+                >
+                  <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: '#69F0AE', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Play size={10} fill="#0F3314" color="#0F3314" style={{ marginLeft: '1px' }} />
+                  </div>
+                  <span>WATCH DIGITAL TOUR (0:56)</span>
+                </button>
               </div>
 
               {/* Image Footer Details */}

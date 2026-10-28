@@ -20,7 +20,7 @@ export const MarketsSection: React.FC = () => {
     },
     {
       title: 'MINING & HEAVY INDUSTRIAL LOGISTICS',
-      desc: 'Extreme impact haul truck spindle castings, dragline bucket teeth, and heavy industrial turnout trackwork sets.',
+      desc: 'Extreme impact haul truck spindle castings, dragline bucket teeth, and heavy-duty agricultural machinery components.',
       tag: 'HEAVY HAUL'
     }
   ];

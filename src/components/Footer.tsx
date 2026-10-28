@@ -40,10 +40,10 @@ export const Footer: React.FC = () => {
   ];
 
   const solutions = [
-    'ASABE S572.1 Drift Control',
+    'Advanced Drift Control',
     'ASTM A536 Ductile Metallurgy',
     'Electric Induction Melting',
-    'ISO 17025 Testing & NDT Lab',
+    'In-House Testing & NDT Lab',
     'High-Acreage Crop Protection',
     'North American Dealer Network'
   ];
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
     'About Agro Foundries',
     'Agricultural Engineering Team',
     'Foundry & CNC Machining Centers',
-    'USDA / FEMA Compliance Status',
+    'American Farm Equipment Support',
     'Contact Farm Machinery Sales'
   ];
 
@@ -395,10 +395,10 @@ export const Footer: React.FC = () => {
 
             <div style={{ padding: '1.25rem 1.5rem', borderRadius: '8px', background: 'rgba(255, 255, 255, 0.06)', border: '1px solid rgba(76, 175, 80, 0.35)' }}>
               <div style={{ fontSize: '12px', fontWeight: 900, color: '#A5D6A7', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>
-                ASABE &amp; ISO 9001 QUALITY ACCREDITATION
+                PREMIUM QUALITY ASSURANCE
               </div>
               <p style={{ fontSize: '13.5px', color: 'rgba(255, 255, 255, 0.85)', lineHeight: 1.55, margin: 0, fontFamily: "'Manrope', sans-serif !important" }}>
-                All agricultural machinery components and implement castings are manufactured under ISO 9001:2015 certification with 100% volumetric NDT and full heat-code traceability.
+                All agricultural machinery components and implement castings are manufactured with rigorous quality inspection, ultrasonic testing, and complete heat-code traceability.
               </p>
             </div>
 

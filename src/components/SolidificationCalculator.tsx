@@ -177,7 +177,7 @@ export const SolidificationCalculator: React.FC = () => {
             <div style={{ paddingTop: '1.25rem', marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <ShieldCheck size={16} color="#4CAF50" />
               <span style={{ fontSize: '11px', color: '#E8F5E9', fontFamily: "'Manrope', sans-serif !important" }}>
-                Calculations auto-validated against AREMA Chapter 4 specs.
+                Calculations auto-validated against heavy-duty casting specs.
               </span>
             </div>
           </div>

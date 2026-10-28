@@ -4,34 +4,34 @@ import { ShieldCheck, ArrowRight } from 'lucide-react';
 export const StandardsGrid: React.FC = () => {
   const standards = [
     {
-      code: 'ISO 9001:2015',
-      name: 'QUALITY MANAGEMENT SYSTEM',
-      desc: 'Certified agricultural machinery production facilities with full metallurgical traceability from scrap melt to final field delivery.'
+      code: 'HEAVY-DUTY QUALITY',
+      name: 'MANUFACTURING TRACEABILITY',
+      desc: 'Agricultural machinery production with full metallurgical tracking from raw melt to final field delivery.'
     },
     {
-      code: 'ASABE S572.1',
-      name: 'SPRAY NOZZLE DROPLET SPECTRUM',
-      desc: 'American Society of Agricultural and Biological Engineers nozzle classification for ultra-fine atomization and drift reduction.'
+      code: 'PRECISION ATOMIZATION',
+      name: 'UNIFORM DRIFT CONTROL',
+      desc: 'Engineered spray nozzle geometry for ultra-fine atomization, uniform field coverage, and drift reduction.'
     },
     {
-      code: 'ASTM A536',
-      name: 'DUCTILE IRON CASTING SPECIFICATION',
-      desc: 'Compliance for high-tensile ductile iron (Grade 65-45-12 & 80-55-06) for implement housings, roller rings, and planetary carriers.'
+      code: 'DUCTILE IRON CASTINGS',
+      name: 'HIGH-TENSILE ALLOY SPEC',
+      desc: 'Heavy-duty ductile iron casting for implement housings, roller rings, and planetary carriers.'
     },
     {
-      code: 'ISO 11783 (ISOBUS)',
-      name: 'TRACTOR & IMPLEMENT BUS STANDARD',
-      desc: 'Seamless electronic communication protocol between tractor cab consoles, automatic boom leveling, and variable-rate controllers.'
+      code: 'ISOBUS COMPATIBLE',
+      name: 'TRACTOR & IMPLEMENT PROTOCOL',
+      desc: 'Seamless electronic communication between tractor cab consoles, automatic boom leveling, and variable-rate controllers.'
     },
     {
-      code: 'ASABE S318',
-      name: 'SAFETY FOR AGRICULTURAL FIELD EQUIPMENT',
-      desc: 'Rigorous shielding and structural integrity standards for high-torque PTO drivelines, rotary cutters, and rotating assemblies.'
+      code: 'FIELD EQUIPMENT SAFETY',
+      name: 'RUGGED DRIVELINE SHIELDING',
+      desc: 'Heavy shielding and structural integrity built for high-torque PTO drivelines and rotary cutters.'
     },
     {
-      code: 'FEMA & AEM COMPLIANT',
-      name: 'FARM EQUIPMENT MANUFACTURERS ALLIANCE',
-      desc: 'Active North American industry standards for equipment reliability, hydraulic safety tolerances, and field warranty protection.'
+      code: 'COMMERCIAL GRADE',
+      name: 'FARM EQUIPMENT RELIABILITY',
+      desc: 'Heavy-duty equipment reliability, hydraulic safety tolerances, and field warranty protection.'
     }
   ];
 
@@ -48,15 +48,15 @@ export const StandardsGrid: React.FC = () => {
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#4CAF50' }}>CERTIFICATIONS &amp; NORTH AMERICAN COMPLIANCE</span>
+              <span style={{ color: '#4CAF50' }}>ENGINEERING &amp; MANUFACTURING QUALITY</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-              AGRICULTURAL ENGINEERING STANDARDS
+              AGRICULTURAL QUALITY &amp; TESTING STANDARDS
             </h2>
           </div>
 
           <a href="#contact" className="link-hover-arrow">
-            <span>REQUEST COMPLIANCE CERTIFICATES</span>
+            <span>REQUEST TECHNICAL SPECIFICATIONS</span>
             <ArrowRight size={14} color="#4CAF50" />
           </a>
         </div>
@@ -100,7 +100,7 @@ export const StandardsGrid: React.FC = () => {
             />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(27,94,32,0.9), transparent)', padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
               <span style={{ fontSize: '11.5px', fontWeight: 900, color: '#FFFFFF', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
-                ASABE CERTIFIED SPRAY SYSTEMS
+                PRECISION SPRAY SYSTEMS
               </span>
               <h3 style={{ fontSize: '20px', fontWeight: 900, color: '#FFFFFF', margin: '4px 0 0 0', textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
                 Commercial High-Clearance Crop Sprayers &amp; Booms

@@ -72,7 +72,7 @@ export const FeaturedComponents: React.FC<FeaturedComponentsProps> = () => {
             <div>
               <div className="eyebrow">
                 <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-                <span>ASABE, ISO 9001 &amp; ASTM A536 CERTIFIED CATALOG</span>
+                <span>FIELD TESTED &bull; HEAVY DUTY AGRICULTURAL CATALOG</span>
               </div>
               <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3rem)', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', letterSpacing: '-0.02em', fontFamily: "'Manrope', sans-serif !important" }}>
                 FEATURED AGRICULTURAL MACHINERY &amp; CASTINGS
@@ -220,7 +220,7 @@ export const FeaturedComponents: React.FC<FeaturedComponentsProps> = () => {
                       letterSpacing: '0.04em',
                       fontFamily: "'Manrope', sans-serif !important"
                     }}>
-                      AAR / AREMA
+                      Heavy Duty Quality
                     </span>
                   </div>
                 </div>

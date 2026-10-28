@@ -8,7 +8,7 @@ export const ContactSection: React.FC = () => {
     email: '',
     phone: '',
     company: '',
-    specification: 'AREMA Turnout Trackwork',
+    specification: 'Crop Sprayers & Implements',
     message: ''
   });
 
@@ -17,7 +17,7 @@ export const ContactSection: React.FC = () => {
     setFormSubmitted(true);
     setTimeout(() => {
       setFormSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', company: '', specification: 'AREMA Turnout Trackwork', message: '' });
+      setFormData({ name: '', email: '', phone: '', company: '', specification: 'Crop Sprayers & Implements', message: '' });
     }, 4000);
   };
 
@@ -40,7 +40,7 @@ export const ContactSection: React.FC = () => {
             </h2>
 
             <p style={{ fontSize: '1.05rem', color: '#FFFFFF', lineHeight: 1.65, marginBottom: '2.5rem', fontWeight: 600, fontFamily: "'Manrope', sans-serif !important" }}>
-              Submit your engineering drawings, AREMA Chapter 4 requirements, or AAR M-1003 volume inquiries. Our foundry sales engineers respond within 24 business hours.
+              Submit your engineering drawings, equipment specifications, or custom OEM casting inquiries. Our foundry sales engineers respond within 24 business hours.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2.5rem' }}>
@@ -153,10 +153,10 @@ export const ContactSection: React.FC = () => {
                       onChange={e => setFormData({ ...formData, specification: e.target.value })}
                       style={{ width: '100%', padding: '10px 14px', fontSize: '13px', background: '#F8F9FA', border: '1px solid #E5E7EB', outline: 'none', fontFamily: "'Manrope', sans-serif !important" }}
                     >
-                      <option value="AREMA Turnout Trackwork">AREMA Turnout Trackwork &amp; Manganese Frogs</option>
-                      <option value="Forged Locomotive Axles">Forged Locomotive Axles &amp; Wheelsets</option>
-                      <option value="Bogie Side Frames">Bogie Side Frames &amp; Axlebox Housings</option>
-                      <option value="Catenary Hardware">Overhead Catenary Wire Hardware</option>
+                      <option value="Crop Sprayers & Implements">Crop Sprayers &amp; Farm Machinery Implements</option>
+                      <option value="Ductile Iron Implement Castings">Ductile Iron Implement Castings &amp; Housings</option>
+                      <option value="Rotavator Gearboxes">Rotavator Gearboxes &amp; Transmission Castings</option>
+                      <option value="Agricultural Axles & Hubs">Heavy Duty Agricultural Axles &amp; Wheel Hubs</option>
                       <option value="Custom Casting & Forging">Custom Metallurgy &amp; Contract Manufacturing</option>
                     </select>
                   </div>
@@ -165,7 +165,7 @@ export const ContactSection: React.FC = () => {
                     <label style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '6px', fontFamily: "'Manrope', sans-serif !important" }}>PROJECT SPECIFICATION &amp; VOLUME DETAILS</label>
                     <textarea
                       rows={3}
-                      placeholder="Specify material grade (e.g., ASTM A27, manganese steel), volume units, and delivery timeline..."
+                      placeholder="Specify material grade (e.g., ASTM A536 ductile iron, spray boom specs), volume units, and delivery timeline..."
                       value={formData.message}
                       onChange={e => setFormData({ ...formData, message: e.target.value })}
                       style={{ width: '100%', padding: '10px 14px', fontSize: '13px', background: '#F8F9FA', border: '1px solid #E5E7EB', outline: 'none', resize: 'vertical', fontFamily: "'Manrope', sans-serif !important" }}

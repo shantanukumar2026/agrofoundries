@@ -16,7 +16,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
 
   const features = [
     { title: '98% Foundry Sand Recovery', desc: 'Closed-loop thermal reclamation system recycling silica molding sand' },
-    { title: 'ISO 14001:2015 Certified', desc: 'Zero-discharge environmental management across all foundry units' },
+    { title: 'Zero Waste Sustainable Melting', desc: 'Zero-discharge environmental management across all foundry units' },
     { title: '100% Recycled Scrap Steel', desc: 'Electric arc furnaces powered by scrap metal & renewable power' },
     { title: 'Sub-Zero Fatigue Extended Life', desc: 'Extends turnout frog & axle service life, lowering total life carbon' }
   ];
@@ -39,7 +39,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
                 <span style={{ background: '#ECFDF5', color: '#195B34', border: '1px solid #A7F3D0', padding: '4px 10px', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   Green Foundry Tech
                 </span>
-                <span style={{ color: '#15803D', fontSize: '12px', fontWeight: 600 }}>ISO 14001 &amp; AAR M-1003 Compliant</span>
+                <span style={{ color: '#15803D', fontSize: '12px', fontWeight: 600 }}>Eco-Friendly &amp; Quality Inspected</span>
               </div>
               <h3 style={{ fontSize: '22px', fontWeight: 900, color: '#195B34', marginBottom: '12px', lineHeight: 1.25 }}>
                 Recycled Steel Melting &amp; Sand Recovery
@@ -130,7 +130,7 @@ export const EsgSustainability: React.FC<EsgSustainabilityProps> = ({
             {/* Top Badge with SVG Icon */}
             <div style={{ position: 'absolute', top: '16px', left: '16px', background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(8px)', color: '#195B34', padding: '6px 12px', fontSize: '11px', fontWeight: 800, letterSpacing: '0.05em', borderLeft: '3px solid #195B34', display: 'flex', alignItems: 'center', gap: '6px' }}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#195B34" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></svg>
-              ISO 14001 GREEN FOUNDRY
+              ECO-FRIENDLY GREEN FOUNDRY
             </div>
 
             {/* Bottom Glass Card */}

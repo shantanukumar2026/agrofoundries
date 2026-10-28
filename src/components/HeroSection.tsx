@@ -42,7 +42,7 @@ const slidesData = [
   }
 ];
 
-export const HeroSection: React.FC<HeroSectionProps> = ({ onRequestQuoteClick }) => {
+export const HeroSection: React.FC<HeroSectionProps> = ({ onRequestQuoteClick, onWatchVideoClick }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const textRef = useRef<HTMLDivElement>(null);
@@ -236,6 +236,61 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onRequestQuoteClick })
 
           {/* Action Buttons */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '1rem', flexWrap: 'wrap', marginBottom: '3.5rem' }}>
+
+            <button
+              onClick={() => {
+                if (onWatchVideoClick) {
+                  onWatchVideoClick();
+                } else {
+                  const el = document.getElementById('digital-tour');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              style={{
+                padding: '16px 28px',
+                fontSize: '13px',
+                fontWeight: 900,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                borderRadius: '4px',
+                background: 'linear-gradient(135deg, rgba(76, 175, 80, 0.95) 0%, rgba(27, 94, 32, 0.98) 100%)',
+                color: '#FFFFFF',
+                border: '1.5px solid #69F0AE',
+                boxShadow: '0 4px 20px rgba(76, 175, 80, 0.45)',
+                backdropFilter: 'blur(4px)',
+                transition: 'all 0.3s ease',
+                fontFamily: "'Manrope', sans-serif !important"
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#69F0AE';
+                e.currentTarget.style.color = '#0F3314';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 6px 24px rgba(105, 240, 174, 0.6)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(76, 175, 80, 0.95) 0%, rgba(27, 94, 32, 0.98) 100%)';
+                e.currentTarget.style.color = '#FFFFFF';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(76, 175, 80, 0.45)';
+              }}
+            >
+              <div style={{
+                width: '24px',
+                height: '24px',
+                borderRadius: '50%',
+                background: 'rgba(255, 255, 255, 0.25)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <Play size={12} fill="currentColor" style={{ marginLeft: '2px' }} />
+              </div>
+              <span>WATCH DIGITAL TOUR (0:56)</span>
+            </button>
 
             <button
               onClick={onRequestQuoteClick}

@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import {
   Search, Check,
-  ChevronRight, Table, Grid, Info, Sparkles, X, Compass
+  ChevronRight, Table, Grid, Info, X, Compass
 } from 'lucide-react';
 
 export interface ProductItem {
@@ -31,7 +31,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'High-Clearance Self-Propelled Boom Sprayer 120ft',
     series: 'AGRO-PATRIOT 120',
     specs: '120ft Truss Boom • Pulse Width Modulation',
-    compliance: ['ASABE S572.1', 'ISO 11783', 'EPA DRT'],
+    compliance: ['Drift Control', 'ISOBUS Ready', 'Field Tested'],
     axleLoad: 'High Clearance',
     materialGrade: 'High-Strength Tubular Alloy & Poly Tank',
     tensileStrength: '550 MPa',
@@ -48,7 +48,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Commercial Axial-Flow High-Capacity Combine Harvester',
     series: 'AGRO-HARVEST 9120',
     specs: '523 HP Peak • 350-Bushel Grain Tank',
-    compliance: ['ASABE S318', 'ISO 4254', 'FEMA Standards'],
+    compliance: ['Field Safety', 'Heavy Duty', 'Commercial Grade'],
     axleLoad: 'Heavy Drawbar',
     materialGrade: 'High-Tensile Structural Steel & Quadtrac Ready',
     tensileStrength: '620 MPa',
@@ -65,7 +65,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Heavy Articulated 4WD Field Tractor 485 HP',
     series: 'AGRO-STEIGER 485',
     specs: '485 Rated HP • Heavy Drawbar Category IV/V',
-    compliance: ['ASABE S349', 'ISO 500', 'SAE J2847'],
+    compliance: ['PTO Shielded', 'High Torque', 'Field Tested'],
     axleLoad: 'Heavy Drawbar',
     materialGrade: 'Cast Ductile Iron Axle Housings & Heavy Forged Frame',
     tensileStrength: '700 MPa',
@@ -82,7 +82,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Row-Crop High-Torque Agricultural Tractor 250 HP',
     series: 'AGRO-MAGNUM 250',
     specs: '250 HP • Continuously Variable Transmission (CVT)',
-    compliance: ['ASABE S279', 'ISO 730', 'FEMA Approved'],
+    compliance: ['3-Point Hitch', 'Heavy Duty', 'Commercial Grade'],
     axleLoad: 'Mid-Range',
     materialGrade: 'ASTM A536 Grade 80-55-06 Ductile Castings',
     tensileStrength: '650 MPa',
@@ -101,7 +101,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Heavy-Duty Cambridge Packer Roller Ring 500mm',
     series: 'SERIES CRES-RING',
     specs: 'ASTM A536 Grade 65-45-12 Ductile Iron',
-    compliance: ['ASTM A536', 'ISO 9001:2015', 'FEMA Spec'],
+    compliance: ['Ductile Iron', 'Quality Inspected', 'Heavy Duty'],
     axleLoad: 'Implement',
     materialGrade: 'Spheroidal Graphite Ductile Iron',
     tensileStrength: '450 MPa',
@@ -118,7 +118,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Tractor 3-Point Hitch Lower Link Housing & Pivot',
     series: 'SERIES HITCH-LINK',
     specs: 'ASTM A536 80-55-06 High-Tensile Ductile',
-    compliance: ['ASABE S217', 'ASTM A536', 'ISO 9001:2015'],
+    compliance: ['3-Point Hitch', 'Ductile Iron', 'Quality Inspected'],
     axleLoad: 'Heavy Drawbar',
     materialGrade: 'Austempered Ductile Iron (ADI)',
     tensileStrength: '800 MPa',
@@ -135,7 +135,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Interlocking Tractor Front Counterweight Ballast (100 lbs)',
     series: 'SERIES BALLAST-PRO',
     specs: 'ASTM A48 Class 35 Heavy Grey Iron',
-    compliance: ['ASTM A48', 'ASABE S318', 'ISO 9001:2015'],
+    compliance: ['Gray Iron', 'Field Safety', 'Quality Inspected'],
     axleLoad: 'Heavy Drawbar',
     materialGrade: 'High-Density Grey Cast Iron',
     tensileStrength: '250 MPa',
@@ -152,7 +152,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Heavy Planetary Gear Carrier Housing',
     series: 'SERIES PLANET-CARRIER',
     specs: 'High-Strength SG Iron 70-50-05',
-    compliance: ['ASTM A536', 'ISO 9001:2015', 'SAE J434'],
+    compliance: ['Ductile Iron', 'Quality Inspected', 'Heavy Duty'],
     axleLoad: 'Heavy Drawbar',
     materialGrade: 'Ductile Iron with Induction Hardened Bores',
     tensileStrength: '700 MPa',
@@ -171,7 +171,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Progressive Discharge Beater Assembly',
     series: 'SERIES DISCHARGE-PRO',
     specs: 'Precision Dynamic Balanced Steel Construction',
-    compliance: ['ASABE S343', 'ISO 9001:2015', 'FEMA Spec'],
+    compliance: ['High Tensile', 'Quality Inspected', 'Commercial Grade'],
     axleLoad: 'Combine & Harvesting',
     materialGrade: 'Abrasion Resistant High-Yield Alloy',
     tensileStrength: '650 MPa',
@@ -188,7 +188,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'High-Throughput Square Bar Concave (Corn & Soybeans)',
     series: 'SERIES CONCAVE-SB',
     specs: 'Heat-Treated Square Bar Alloy Steel',
-    compliance: ['ASTM A36/A514', 'ISO 9001:2015', 'FEMA Spec'],
+    compliance: ['Structural Steel', 'Quality Inspected', 'Heavy Duty'],
     axleLoad: 'Combine & Harvesting',
     materialGrade: 'Quenched & Tempered Wear-Resistant Steel',
     tensileStrength: '750 MPa',
@@ -205,7 +205,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Heavy Feederhouse Chain with High-Density Poly Flights',
     series: 'SERIES FEED-POLY',
     specs: 'Chrome Moly Riveted Chain & Ultra-Wear Poly',
-    compliance: ['ISO 9001:2015', 'ASABE S318', 'AEM Spec'],
+    compliance: ['Quality Inspected', 'Field Safety', 'Commercial Grade'],
     axleLoad: 'Combine & Harvesting',
     materialGrade: 'Case-Hardened Alloy Pins & UHMW Poly',
     tensileStrength: '850 MPa',
@@ -222,7 +222,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Wear-Resistant Kile Rotor Inlet Flighting Kit',
     series: 'SERIES ROTOR-KILE',
     specs: 'Austenitic Hardfaced Flight Segments',
-    compliance: ['ISO 9001:2015', 'ASTM A532', 'FEMA Standards'],
+    compliance: ['Quality Inspected', 'Abrasion Resistant', 'Heavy Duty'],
     axleLoad: 'Combine & Harvesting',
     materialGrade: 'Chrome Carbide Hardfaced Alloy',
     tensileStrength: '690 MPa',
@@ -241,7 +241,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Rotavator Heavy Multi-Speed Gearbox 13x23',
     series: 'SERIES AGRI-GEAR 13x23',
     specs: 'Multi-Speed Ratio • Ductile Iron Casting Housing',
-    compliance: ['ISO 9001:2015', 'ASABE S318', 'FEMA Approved'],
+    compliance: ['Quality Inspected', 'Field Safety', 'Commercial Grade'],
     axleLoad: 'Implement',
     materialGrade: 'ASTM A536 Grade 65-45-12 Housing & 20MnCr5 Gears',
     tensileStrength: '680 MPa',
@@ -258,7 +258,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Secondary Reduction Rotary Tiller Gearcase 13x25',
     series: 'SERIES AGRI-GEAR 13x25',
     specs: 'High-Reduction Planetary Ratio 13:25',
-    compliance: ['ISO 9001:2015', 'AGMA Spec', 'FEMA Standards'],
+    compliance: ['Quality Inspected', 'Precision Gearing', 'Heavy Duty'],
     axleLoad: 'Implement',
     materialGrade: 'High-Grade Spheroidal Graphite Iron',
     tensileStrength: '720 MPa',
@@ -275,7 +275,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Notched Heavy Tillage Disc Harrow Blades 26-Inch',
     series: 'SERIES DISC-HEAVY 26',
     specs: 'Boron Steel 50-52 HRC Heat Treated',
-    compliance: ['ASTM A684', 'ISO 5680', 'FEMA Approved'],
+    compliance: ['Spring Steel', 'Tillage Grade', 'Heavy Duty'],
     axleLoad: 'Implement',
     materialGrade: 'Boron Alloy Implement Steel (AISI 15B35)',
     tensileStrength: '1450 MPa',
@@ -292,7 +292,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'High-Speed Planter Heavy-Duty Hub & Spindle Assembly',
     series: 'SERIES SEED-HUB HD',
     specs: 'Triple-Lip Cartridge Seal • 5-Bolt Pattern',
-    compliance: ['ASABE S318', 'ISO 9001:2015', 'SAE J434'],
+    compliance: ['Field Safety', 'Quality Inspected', 'Ductile Iron'],
     axleLoad: 'Implement',
     materialGrade: 'Forged 1045 Carbon Steel Spindle & Ductile Hub',
     tensileStrength: '620 MPa',
@@ -311,7 +311,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Heavy Front Wheel Drive (MFWD) Differential Housing',
     series: 'SERIES DIFF-4WD',
     specs: 'High-Strength Ductile Iron ASTM A536',
-    compliance: ['ASTM A536', 'ISO 9001:2015', 'SAE J434'],
+    compliance: ['Ductile Iron', 'Quality Inspected', 'Heavy Duty'],
     axleLoad: 'Heavy Drawbar',
     materialGrade: 'Ductile Iron Grade 80-55-06',
     tensileStrength: '620 MPa',
@@ -328,7 +328,7 @@ export const EXPLORER_PRODUCTS: ProductItem[] = [
     title: 'Fade-Resistant Agricultural Trailer Brake Drum',
     series: 'SERIES AGRI-BRAKE HD',
     specs: 'High-Carbon Grey Iron with Thermal Cooling Fins',
-    compliance: ['DOT FMVSS 121', 'ISO 9001:2015', 'SAE J661'],
+    compliance: ['Heavy Transport', 'Quality Inspected', 'Brake Spec'],
     axleLoad: 'Heavy Drawbar',
     materialGrade: 'ASTM A48 Class 35B High-Carbon Grey Iron',
     tensileStrength: '280 MPa',
@@ -367,9 +367,9 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
   // Available Standards Filter Options
   const standardsList = [
     { id: 'all', label: 'All Standards' },
-    { id: 'ASABE', label: 'ASABE S572.1' },
+    { id: 'DriftControl', label: 'Drift Control' },
     { id: 'ASTM', label: 'ASTM A536' },
-    { id: 'ISO', label: 'ISO 11783 (ISOBUS)' },
+    { id: 'ISOBUS', label: 'ISOBUS Ready' },
     { id: 'FEMA', label: 'FEMA / AEM' },
     { id: 'SAE', label: 'SAE Ag Standards' }
   ];
@@ -476,7 +476,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
               textTransform: 'uppercase',
               marginBottom: '1rem'
             }}>
-              <Sparkles size={16} color="#4CAF50" />
+              
               <span>INTERACTIVE ENGINEERING SEARCH ENGINE</span>
             </div>
 
@@ -510,7 +510,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                   Component &amp; Technical Spec Explorer
                 </h3>
                 <span style={{ fontSize: '0.825rem', color: '#4CAF50' }}>
-                  Filter by ASABE / ASTM standards, implement categories, and CAD schematics
+                  Filter by implement categories, metallurgy, and CAD schematics
                 </span>
               </div>
             </div>
@@ -558,7 +558,7 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                 type="text"
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
-                placeholder="Search machinery, part name, spec (e.g. ASABE, ASTM, ISO, Gearbox, Nozzle)..."
+                placeholder="Search machinery, part name, spec (e.g. Gearbox, Nozzle, Sprayer, Casting)..."
                 style={{
                   width: '100%',
                   padding: '10px 14px 10px 42px',
@@ -803,9 +803,9 @@ export const InteractiveExplorer: React.FC<InteractiveExplorerProps> = ({
                 color: '#2E7D32'
               }}>
                 <div><strong style={{ color: '#1B5E20' }}>BCNHL:</strong> Bogie Covered Number High-Capacity Length Wagon</div>
-                <div><strong style={{ color: '#1B5E20' }}>ASABE S572.1:</strong> Droplet Size Spectrum &amp; Drift Reduction Spray Standard</div>
+                <div><strong style={{ color: '#1B5E20' }}>Drift Control:</strong> Droplet Size Spectrum &amp; Drift Reduction Spray Technology</div>
                 <div><strong style={{ color: '#1B5E20' }}>ASTM A536:</strong> Standard Spec for Ductile Iron Implement Castings</div>
-                <div><strong style={{ color: '#1B5E20' }}>ISO 11783:</strong> ISOBUS Standardized Tractor &amp; Implement Electronic Interface</div>
+                <div><strong style={{ color: '#1B5E20' }}>ISOBUS Ready:</strong> Standardized Tractor &amp; Implement Electronic Interface</div>
                 <div><strong style={{ color: '#1B5E20' }}>PWM:</strong> Pulse Width Modulation Electronic Individual Nozzle Control</div>
                 <div><strong style={{ color: '#1B5E20' }}>FEMA:</strong> Farm Equipment Manufacturers Association (USA)</div>
                 <div><strong style={{ color: '#1B5E20' }}>AEM:</strong> Association of Equipment Manufacturers (USA)</div>

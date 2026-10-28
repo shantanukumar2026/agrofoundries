@@ -19,7 +19,7 @@ export const SustainabilitySection: React.FC = () => {
             </h2>
 
             <p style={{ fontSize: '1rem', color: '#2E7D32', lineHeight: 1.7, marginBottom: '2rem', fontWeight: 500, maxWidth: '640px', fontFamily: "'Manrope', sans-serif !important" }}>
-              Agro Foundries operates electric arc and induction melting furnaces powered by 100% recycled structural scrap steel. Combined with closed-loop thermal sand reclamation, our foundries minimize environmental impact without compromising fatigue endurance or AREMA standards.
+              Agro Foundries operates electric arc and induction melting furnaces powered by 100% recycled structural scrap steel. Combined with closed-loop thermal sand reclamation, our foundries minimize environmental impact without compromising fatigue endurance or heavy-duty field durability standards.
             </p>
 
             {/* 3 Factual Sustainability Pillar Cards */}
@@ -53,7 +53,7 @@ export const SustainabilitySection: React.FC = () => {
               <div style={{ background: '#FAF6EE', border: '1px solid #E5E7EB', padding: '1.25rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem', color: '#1B5E20' }}>
                   <Leaf size={18} color="#4CAF50" />
-                  <strong style={{ fontSize: '1.25rem', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>ISO 14001</strong>
+                  <strong style={{ fontSize: '1.25rem', fontWeight: 900, fontFamily: "'Manrope', sans-serif !important" }}>ECO-FOUNDRY</strong>
                 </div>
                 <span style={{ fontSize: '11px', fontWeight: 800, color: '#1B5E20', display: 'block', textTransform: 'uppercase', letterSpacing: '0.04em', fontFamily: "'Manrope', sans-serif !important" }}>
                   ENVIRONMENTAL QA

@@ -10,9 +10,9 @@ export const FactoryOverview: React.FC = () => {
       icon: Box
     },
     {
-      value: 'ISO 9001 / ASABE',
-      label: 'AGRICULTURAL STANDARDS',
-      sub: 'Certified manufacturing excellence for farm machinery',
+      value: 'HEAVY-DUTY',
+      label: 'BUILT FOR TOUGH FIELDS',
+      sub: 'Proven manufacturing excellence for modern farm machinery',
       icon: ShieldCheck
     },
     {

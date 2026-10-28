@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import './index.css';
 import { ChevronUp } from 'lucide-react';
 
+import DigitalTourSection from './components/DigitalTourSection';
+import WatchVideoModal from './components/WatchVideoModal';
+import RequestQuoteModal from './components/RequestQuoteModal';
 import TopContactBar from './components/TopContactBar';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
@@ -24,6 +27,9 @@ import Footer from './components/Footer';
 function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [videoModalInitialTime, setVideoModalInitialTime] = useState(0);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,14 +100,34 @@ function App() {
       <TopContactBar />
 
       {/* 02 Main Navigation & 03 Mega Menu */}
-      <Header />
+      <Header onRequestQuoteClick={() => setIsQuoteModalOpen(true)} />
 
       <main id="main-content">
         {/* 04 Full Screen Hero Section */}
-        <HeroSection />
+        <HeroSection 
+          onRequestQuoteClick={() => setIsQuoteModalOpen(true)}
+          onWatchVideoClick={() => {
+            setVideoModalInitialTime(0);
+            setIsVideoModalOpen(true);
+          }}
+        />
 
         {/* 05 Company Introduction */}
-        <CompanyIntro />
+        <CompanyIntro 
+          onWatchVideoClick={() => {
+            setVideoModalInitialTime(0);
+            setIsVideoModalOpen(true);
+          }}
+        />
+
+        {/* 05B Interactive Digital Platform & Machinery Showcase (Video Reel) */}
+        <DigitalTourSection 
+          onOpenModal={(time) => {
+            setVideoModalInitialTime(time || 0);
+            setIsVideoModalOpen(true);
+          }}
+          onRequestQuoteClick={() => setIsQuoteModalOpen(true)}
+        />
 
         {/* 06 Featured Rail Components (All Products) */}
         <FeaturedComponents />
@@ -137,7 +163,7 @@ function App() {
         <NewsInsights />
 
         {/* 17 CTA Banner */}
-        <CtaBanner />
+        <CtaBanner onRequestQuoteClick={() => setIsQuoteModalOpen(true)} />
       </main>
 
       {/* 18 Corporate Mega Footer & Bottom Footer */}
@@ -176,6 +202,17 @@ function App() {
           </button>
         )}
       </div>
+
+      {/* Modals */}
+      <WatchVideoModal 
+        isOpen={isVideoModalOpen} 
+        onClose={() => setIsVideoModalOpen(false)} 
+        initialTime={videoModalInitialTime} 
+      />
+      <RequestQuoteModal 
+        isOpen={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)} 
+      />
 
     </div>
   );

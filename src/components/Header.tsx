@@ -145,10 +145,10 @@ export const Header: React.FC<HeaderProps> = ({ onRequestQuoteClick }) => {
         {
           title: 'STANDARDS & ACCREDITATIONS',
           links: [
-            'ASABE S318 Equipment Standards',
-            'ISO 9001:2015 Quality Manufacturing',
-            'USDA Agritech Field Research Data',
-            'FEMA North America Equipment Spec'
+            'Farm Machinery Safety Standards',
+            'Heavy-Duty Quality Manufacturing',
+            'American Agritech Field Support',
+            'North American Equipment Specs'
           ]
         }
       ]

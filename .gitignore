@@ -26,3 +26,10 @@ dist-ssr
 .vercel
 *.zip
 *.txt
+
+*.rar
+scratch/
+public/products/Master PDF Editor*
+public/products/*.mp4
+public/products/*.dwg
+public/products/*.pdf

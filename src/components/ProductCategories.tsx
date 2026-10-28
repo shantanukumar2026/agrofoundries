@@ -9,7 +9,7 @@ export const ProductCategories: React.FC = () => {
       title: 'PASSENGER COACH & BOGIE SUSPENSION',
       desc: 'Precision train suspension parts, control arms, brake supports, and axle housings built to international rail safety standards.',
       img: '/images/locomotive_wheelset_stock.jpg',
-      specs: 'DIN / EN / ISO APPROVED',
+      specs: 'HIGH-TENSILE ALLOY CASTING',
       tag: 'PASSENGER COACH'
     },
     {
@@ -50,7 +50,7 @@ export const ProductCategories: React.FC = () => {
           <div>
             <div className="eyebrow">
               <span style={{ display: 'inline-block', width: '32px', height: '3px', background: '#4CAF50' }} />
-              <span style={{ color: '#4CAF50' }}>ASABE, ASTM &amp; ISO 11783 CERTIFIED DIVISIONS</span>
+              <span style={{ color: '#4CAF50' }}>PRECISION AGRICULTURAL DIVISIONS</span>
             </div>
             <h2 style={{ fontSize: '2.25rem', color: '#111827', fontWeight: 900, margin: 0, textTransform: 'uppercase', fontFamily: "'Manrope', sans-serif !important" }}>
               ENTERPRISE MACHINERY DIVISIONS &amp; FIELD SYSTEMS

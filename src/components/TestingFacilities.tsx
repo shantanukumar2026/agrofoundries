@@ -4,11 +4,11 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 export const TestingFacilities: React.FC = () => {
   const tests = [
     'Mechanical Endurance & Fatigue Testing',
-    'Spectrometry Chemical Dosing (ASTM A536)',
+    'Spectrometry Chemical Analysis & Dosing',
     '100% Hydrostatic & Boom Flow Validation',
     'Metallographic Solidification & Nodule Count',
     'CMM Laser Dimensional Audits',
-    'ISO/IEC 17025 Accredited In-House Lab'
+    'Certified In-House Metallurgical & QA Lab'
   ];
 
   return (
@@ -38,7 +38,7 @@ export const TestingFacilities: React.FC = () => {
               Testing Facilities & Labs
             </h2>
             <p style={{ color: '#4B5563', fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '2rem' }}>
-              We ensure uncompromising quality and traceability for every component through our fully equipped, accredited in-house testing laboratories.
+              We ensure uncompromising quality and traceability for every component through our fully equipped in-house testing laboratories.
             </p>
 
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2.5rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>

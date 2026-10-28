@@ -2,7 +2,7 @@ import React from 'react';
 
 export const KnowledgeCenter: React.FC = () => {
   const resources = [
-    { title: 'Technical Guides', desc: 'Detailed reference specifications for AREMA and AAR compliance validation.' },
+    { title: 'Technical Guides', desc: 'Detailed reference specifications for agricultural equipment and casting performance.' },
     { title: 'metal Specifications', desc: 'Chemical design guides for high-strength austenitic manganese castings.' },
     { title: 'Forging Basics', desc: 'Best practices for drop forging, heat treatment, and ultrasonic NDT testing.' },
     { title: 'Case Studies', desc: 'In-depth reviews of structural rail components under severe heavy-haul loads.' }
